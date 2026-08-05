@@ -1,10 +1,14 @@
+import AnimatedCounter from "@/components/common/AnimatedCounter";
+
 type Props = {
-  value: string;
+  end: number;
+  suffix: string;
   label: string;
 };
 
 export default function StatCard({
-  value,
+  end,
+  suffix,
   label,
 }: Props) {
   return (
@@ -22,7 +26,10 @@ export default function StatCard({
       "
     >
       <h3 className="text-5xl font-black text-primary">
-        {value}
+        <AnimatedCounter
+          end={end}
+          suffix={suffix}
+        />
       </h3>
 
       <p className="mt-4 text-muted-foreground">
