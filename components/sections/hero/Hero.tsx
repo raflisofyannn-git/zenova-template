@@ -8,7 +8,7 @@ export default function Hero() {
       <div className="absolute inset-0 -z-30 bg-gradient-to-br from-background via-background to-primary/5" />
 
       {/* Glow Effect */}
-      <div className="absolute left-1/2 top-40 -z-20 h-[650px] w-[650px] -translate-x-1/2 rounded-full bg-primary/15 blur-[170px]" />
+      <div className="absolute left-1/2 top-40 -z-20 h-[650px] w-[650px] -translate-x-1/2 rounded-full bg-primary/30 blur-[180px]" />
 
       {/* Grid Background */}
       <div
@@ -25,13 +25,13 @@ export default function Hero() {
         className="
           mx-auto
           flex
-          min-h-screen
+          h-[calc(100vh-80px)]
           max-w-7xl
           items-center
           justify-between
-          gap-16
-          px-6
-          py-20
+          gap-28 xl:gap-32
+          px-8 xl:px-10
+          py-10
           lg:flex-row
           flex-col
         "

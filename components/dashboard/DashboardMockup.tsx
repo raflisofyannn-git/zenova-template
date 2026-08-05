@@ -1,4 +1,5 @@
 import BrowserHeader from "./BrowserHeader";
+import Sidebar from "./Sidebar";
 import StatsGrid from "./StatsGrid";
 import RevenueChart from "./RevenueChart";
 import ActivityList from "./ActivityList";
@@ -10,8 +11,8 @@ export default function DashboardMockup() {
   return (
     <div
       className="
-        h-[640px]
-        w-[600px]
+        h-[520px]
+        w-[620px]
         overflow-hidden
         rounded-[36px]
         border
@@ -21,22 +22,25 @@ export default function DashboardMockup() {
     >
       <BrowserHeader />
 
-      <div className="space-y-6 p-6">
-        <StatsGrid />
+      <div className="flex h-[calc(100%-64px)]">
+        <Sidebar />
 
-        <RevenueChart />
+        <div className="flex-1 space-y-5 overflow-hidden p-5">
+          <StatsGrid />
 
-        <div className="grid grid-cols-2 gap-6">
+          <RevenueChart />
+
+          <div className="grid grid-cols-2 gap-5">
             <ActivityList />
             <ProgressCard />
+          </div>
 
-        <div className="grid grid-cols-2 gap-6">
+          <div className="grid grid-cols-2 gap-5">
             <TeamMembers />
             <NotificationCard />
-            </div>
+          </div>
         </div>
-        </div>
-
+      </div>
     </div>
   );
 }

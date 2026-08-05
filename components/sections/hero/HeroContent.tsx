@@ -11,7 +11,7 @@ export default function HeroContent() {
       </FadeUp>
 
       <FadeUp delay={0.2}>
-        <h1 className="mt-8 text-5xl font-black leading-tight lg:text-7xl">
+        <h1 className="mt-8 text-5xl font-black leading-[1.05] lg:text-6xl xl:text-7xl">
           Build Modern
           <br />
           Business Websites.
