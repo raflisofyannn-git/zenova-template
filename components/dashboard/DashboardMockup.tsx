@@ -3,13 +3,15 @@ import StatsGrid from "./StatsGrid";
 import RevenueChart from "./RevenueChart";
 import ActivityList from "./ActivityList";
 import ProgressCard from "./ProgressCard";
+import TeamMembers from "./TeamMembers";
+import NotificationCard from "./NotificationCard";
 
 export default function DashboardMockup() {
   return (
     <div
       className="
-        h-[520px]
-        w-[620px]
+        h-[640px]
+        w-[680px]
         overflow-hidden
         rounded-[36px]
         border
@@ -19,19 +21,21 @@ export default function DashboardMockup() {
     >
       <BrowserHeader />
 
-      <div className="space-y-8 p-8">
-
+      <div className="space-y-6 p-6">
         <StatsGrid />
 
         <RevenueChart />
 
         <div className="grid grid-cols-2 gap-6">
-        <ActivityList />
+            <ActivityList />
+            <ProgressCard />
 
-        <ProgressCard />
+        <div className="grid grid-cols-2 gap-6">
+            <TeamMembers />
+            <NotificationCard />
+            </div>
         </div>
-
-      </div>
+        </div>
 
     </div>
   );

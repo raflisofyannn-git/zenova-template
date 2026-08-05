@@ -16,8 +16,8 @@ export default function RevenueChart() {
 
         </div>
 
-        <span className="rounded-full bg-green-100 px-3 py-1 text-sm font-semibold text-green-600">
-          +18.2%
+        <span className="rounded-full bg-emerald-100 px-3 py-1 text-xs font-semibold text-emerald-700">
+        ▲ +18.2%
         </span>
 
       </div>
@@ -26,6 +26,9 @@ export default function RevenueChart() {
         viewBox="0 0 500 180"
         className="h-52 w-full"
       >
+        <line x1="0" y1="40" x2="500" y2="40" stroke="#E5E7EB" />
+        <line x1="0" y1="90" x2="500" y2="90" stroke="#E5E7EB" />
+        <line x1="0" y1="140" x2="500" y2="140" stroke="#E5E7EB" />
         <path
           d="M0 140
              C60 120 80 100 120 105
