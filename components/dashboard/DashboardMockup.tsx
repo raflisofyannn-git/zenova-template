@@ -11,7 +11,7 @@ export default function DashboardMockup() {
     <div
       className="
         h-[640px]
-        w-[680px]
+        w-[600px]
         overflow-hidden
         rounded-[36px]
         border

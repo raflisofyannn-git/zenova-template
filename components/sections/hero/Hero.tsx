@@ -4,17 +4,13 @@ import HeroImage from "./HeroImage";
 export default function Hero() {
   return (
     <section className="relative overflow-hidden">
+      {/* Background Gradient */}
+      <div className="absolute inset-0 -z-30 bg-gradient-to-br from-background via-background to-primary/5" />
 
-      {/* Background */}
+      {/* Glow Effect */}
+      <div className="absolute left-1/2 top-40 -z-20 h-[650px] w-[650px] -translate-x-1/2 rounded-full bg-primary/15 blur-[170px]" />
 
-      <div className="absolute inset-0 -z-20 bg-gradient-to-br from-background via-background to-primary/5" />
-
-      {/* Glow */}
-
-      <div className="absolute left-1/2 top-32 -z-10 h-[550px] w-[550px] -translate-x-1/2 rounded-full bg-primary/20 blur-[140px]" />
-
-      {/* Grid */}
-
+      {/* Grid Background */}
       <div
         className="
           absolute
@@ -25,14 +21,31 @@ export default function Hero() {
         "
       />
 
-      <div className="mx-auto grid min-h-[92vh] max-w-7xl items-center gap-20 px-6 lg:grid-cols-2">
+      <div
+        className="
+          mx-auto
+          flex
+          min-h-screen
+          max-w-7xl
+          items-center
+          justify-between
+          gap-16
+          px-6
+          py-20
+          lg:flex-row
+          flex-col
+        "
+      >
+        {/* Left */}
+        <div className="w-full lg:max-w-[520px]">
+          <HeroContent />
+        </div>
 
-        <HeroContent />
-
-        <HeroImage />
-
+        {/* Right */}
+        <div className="flex w-full justify-end">
+          <HeroImage />
+        </div>
       </div>
-
     </section>
   );
 }

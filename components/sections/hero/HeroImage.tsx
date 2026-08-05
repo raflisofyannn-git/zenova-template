@@ -1,100 +1,73 @@
+import FadeLeft from "@/components/animation/FadeLeft";
+import DashboardMockup from "@/components/dashboard/DashboardMockup";
+
 export default function HeroImage() {
   return (
-    <div className="relative hidden lg:flex items-center justify-center">
-
+    <div className="relative hidden h-full w-full items-center justify-end lg:flex">
       {/* Dashboard */}
+      <FadeLeft>
+        <div className="relative scale-95 xl:scale-100">
+          <DashboardMockup />
+        </div>
+      </FadeLeft>
 
+      {/* Revenue Card */}
       <div
         className="
-          relative
-          h-[520px]
-          w-[620px]
-          overflow-hidden
-          rounded-[36px]
+          absolute
+          left-0
+          bottom-28
+          z-20
+          rounded-3xl
           border
-          bg-white
+          border-white/40
+          bg-white/80
+          backdrop-blur-xl
+          p-6
           shadow-2xl
         "
       >
+        <p className="text-sm text-muted-foreground">
+          Revenue
+        </p>
 
-        <div className="border-b p-6">
+        <h3 className="mt-2 text-3xl font-bold">
+          $120K
+        </h3>
 
-          <div className="flex gap-2">
-
-            <div className="h-3 w-3 rounded-full bg-red-400" />
-
-            <div className="h-3 w-3 rounded-full bg-yellow-400" />
-
-            <div className="h-3 w-3 rounded-full bg-green-400" />
-
-          </div>
-
-        </div>
-
-        <div className="space-y-6 p-8">
-
-          <div className="h-6 w-60 rounded bg-slate-200" />
-
-          <div className="grid grid-cols-2 gap-6">
-
-            <div className="h-36 rounded-2xl bg-slate-100" />
-
-            <div className="h-36 rounded-2xl bg-slate-100" />
-
-            <div className="col-span-2 h-52 rounded-2xl bg-slate-100" />
-        <div
-            className="
-                absolute
-                -left-10
-                bottom-20
-                rounded-3xl
-                border
-                bg-background
-                p-6
-                shadow-xl
-            "
-            >
-
-            <p className="text-sm text-muted-foreground">
-                Revenue
-            </p>
-
-            <h3 className="mt-2 text-3xl font-bold">
-                $120K
-            </h3>
-
-            </div>
-
-            <div
-            className="
-                absolute
-                -right-10
-                top-20
-                rounded-3xl
-                border
-                bg-background
-                p-6
-                shadow-xl
-            "
-            >
-
-            <p className="text-sm text-muted-foreground">
-                Projects
-            </p>
-
-            <h3 className="mt-2 text-3xl font-bold">
-                250+
-            </h3>
-
-            </div>
-
-          </div>
-
-        </div>
-
+        <p className="mt-2 text-sm font-semibold text-emerald-600">
+          ▲ +18.2%
+        </p>
       </div>
 
-    </div>
+      {/* Projects Card */}
+      <div
+        className="
+          absolute
+          right-[-28px]
+          top-16
+          z-20
+          rounded-3xl
+          border
+          border-white/40
+          bg-white/80
+          backdrop-blur-xl
+          p-6
+          shadow-2xl
+        "
+      >
+        <p className="text-sm text-muted-foreground">
+          Projects
+        </p>
 
+        <h3 className="mt-2 text-3xl font-bold">
+          250+
+        </h3>
+
+        <p className="mt-2 text-sm font-semibold text-blue-600">
+          Active
+        </p>
+      </div>
+    </div>
   );
 }
