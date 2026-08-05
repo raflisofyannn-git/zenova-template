@@ -1,6 +1,8 @@
 import BrowserHeader from "./BrowserHeader";
 import StatsGrid from "./StatsGrid";
 import RevenueChart from "./RevenueChart";
+import ActivityList from "./ActivityList";
+import ProgressCard from "./ProgressCard";
 
 export default function DashboardMockup() {
   return (
@@ -22,6 +24,12 @@ export default function DashboardMockup() {
         <StatsGrid />
 
         <RevenueChart />
+
+        <div className="grid grid-cols-2 gap-6">
+        <ActivityList />
+
+        <ProgressCard />
+        </div>
 
       </div>
 
