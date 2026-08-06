@@ -32,8 +32,9 @@ export default function LogoCloud() {
         >
           {logoCloud.map((logo) => (
             <LogoItem
-              key={logo.name}
-              name={logo.name}
+                key={logo.name}
+                name={logo.name}
+                logo={logo.logo}
             />
           ))}
         </div>
