@@ -43,7 +43,7 @@ export default function FooterLinks() {
 
       <div>
 
-        <h3 className="font-bold">
+        <h3 className="text-lg font-bold text-white">
           Product
         </h3>
 
@@ -67,7 +67,7 @@ export default function FooterLinks() {
 
       <div>
 
-        <h3 className="font-bold">
+        <h3 className="text-lg font-bold text-white">
           Company
         </h3>
 
@@ -91,7 +91,7 @@ export default function FooterLinks() {
 
       <div>
 
-        <h3 className="font-bold">
+        <h3 className="text-lg font-bold text-white">
           Resources
         </h3>
 
