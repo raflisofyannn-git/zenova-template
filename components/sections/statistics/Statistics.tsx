@@ -1,45 +1,99 @@
 import FadeUp from "@/components/animation/FadeUp";
-import SectionContainer from "@/components/common/SectionContainer";
-import SectionBadge from "@/components/common/SectionBadge";
-import SectionTitle from "@/components/common/SectionTitle";
-import SectionDescription from "@/components/common/SectionDescription";
 
-import StatCard from "./StatCard";
+import StatisticCard from "@/components/sections/statistics/StatisticCard";
+
 import { statistics } from "@/data/statistics";
+
+import SectionBadge from "@/components/common/SectionBadge";
+import SectionContainer from "@/components/common/SectionContainer";
+import SectionDescription from "@/components/common/SectionDescription";
+import SectionTitle from "@/components/common/SectionTitle";
 
 export default function Statistics() {
   return (
-    <section className="py-32">
+    <section className="relative overflow-hidden py-32">
+
+      {/* Background */}
+
+      <div className="absolute inset-0 -z-20 bg-gradient-to-b from-background to-primary/5" />
+
+      {/* Glow */}
+
+      <div
+        className="
+          absolute
+          right-0
+          top-20
+          -z-10
+          h-[500px]
+          w-[500px]
+          rounded-full
+          bg-primary/10
+          blur-[180px]
+        "
+      />
+
       <SectionContainer>
-        <div className="text-center">
-          <SectionBadge>
-            Our Impact
-          </SectionBadge>
 
-          <SectionTitle>
-            Trusted by Businesses Worldwide
-          </SectionTitle>
+        <div className="mx-auto max-w-3xl text-center">
 
-          <SectionDescription>
-            Thousands of companies rely on Aureon to
-            build modern, scalable digital experiences.
-          </SectionDescription>
+          <FadeUp>
+
+            <SectionBadge>
+              Our Impact
+            </SectionBadge>
+
+            <SectionTitle>
+              Trusted by Businesses Worldwide
+            </SectionTitle>
+
+            <SectionDescription>
+              Thousands of companies rely on Aureon to build
+              modern, scalable digital experiences.
+            </SectionDescription>
+
+          </FadeUp>
+
+          <FadeUp delay={0.15}>
+            <div
+              className="
+                mx-auto
+                mt-12
+                h-px
+                w-28
+                rounded-full
+                bg-border
+              "
+            />
+          </FadeUp>
+
         </div>
 
-        <div className="mt-20 grid gap-8 sm:grid-cols-2 xl:grid-cols-4">
+        <div
+          className="
+            mt-24
+            grid
+            gap-8
+            md:grid-cols-2
+            xl:grid-cols-4
+          "
+        >
           {statistics.map((item, index) => (
             <FadeUp
-              key={item.label}
-              delay={index * 0.1}
+              key={item.title}
+              delay={index * 0.15}
             >
-              <StatCard
-                value={item.value}
-                label={item.label}
+              <StatisticCard
+                number={item.number}
+                suffix={item.suffix}
+                title={item.title}
               />
             </FadeUp>
           ))}
         </div>
+
       </SectionContainer>
+
     </section>
   );
 }
