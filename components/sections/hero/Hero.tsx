@@ -25,15 +25,16 @@ export default function Hero() {
         className="
           mx-auto
           flex
-          h-[calc(100vh-80px)]
+          min-h-screen
           max-w-7xl
-          items-center
-          justify-between
-          gap-28 xl:gap-32
-          px-8 xl:px-10
-          py-10
-          lg:flex-row
           flex-col
+          items-center
+          gap-24
+          px-8
+          pt-36
+          pb-24
+          lg:flex-row
+          lg:justify-between
         "
       >
         {/* Left */}
@@ -42,7 +43,7 @@ export default function Hero() {
         </div>
 
         {/* Right */}
-        <div className="flex w-full justify-end">
+        <div className="flex w-full justify-center lg:justify-end">
           <HeroImage />
         </div>
       </div>

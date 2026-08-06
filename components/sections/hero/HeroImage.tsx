@@ -3,29 +3,38 @@ import DashboardMockup from "@/components/dashboard/DashboardMockup";
 
 export default function HeroImage() {
   return (
-    <div className="relative hidden items-center justify-center lg:flex lg:-translate-y-6">
+    <div
+      className="
+        relative
+        hidden
+        min-h-[620px]
+        items-center
+        justify-center
+        lg:flex
+      "
+    >
       {/* Dashboard */}
       <FadeLeft>
-        <div className="scale-90 origin-center">
-        <DashboardMockup />
+        <div className="origin-center scale-[0.88] xl:scale-95">
+          <DashboardMockup />
         </div>
-        
       </FadeLeft>
 
       {/* Revenue Card */}
       <div
         className="
-        absolute
-        -left-10
-        bottom-5
-        z-20
-        rounded-3xl
-        border
-        bg-background
-        p-6
-        shadow-2xl
-          "
-        >
+          absolute
+          left-0
+          bottom-14
+          z-20
+          rounded-3xl
+          border
+          border-border/60
+          bg-background
+          p-6
+          shadow-2xl
+        "
+      >
         <p className="text-sm text-muted-foreground">
           Revenue
         </p>
@@ -41,18 +50,18 @@ export default function HeroImage() {
 
       {/* Projects Card */}
       <div
-          className="
+        className="
           absolute
-          -right-21
-          top-6
+          right-0
+          top-12
           z-20
           rounded-3xl
           border
-          border-white/40
-          bg-white/80
-          backdrop-blur-xl
+          border-border/60
+          bg-background/90
           p-6
           shadow-2xl
+          backdrop-blur-xl
         "
       >
         <p className="text-sm text-muted-foreground">
