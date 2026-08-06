@@ -1,13 +1,33 @@
+import FooterCTA from "@/components/footer/FooterCTA";
+import FooterLinks from "@/components/footer/FooterLinks";
+import FooterBottom from "@/components/footer/FooterBottom";
+
 export default function Footer() {
   return (
-    <footer className="border-t py-12">
+    <>
+      <FooterCTA />
 
-      <div className="mx-auto max-w-7xl px-6">
+      <footer
+        className="
+          border-t
+          border-border/40
+          bg-slate-950
+          text-white
+        "
+      >
+        <div
+          className="
+            mx-auto
+            max-w-7xl
+            px-8
+            py-20
+          "
+        >
+          <FooterLinks />
 
-        © 2026 Aureon
-
-      </div>
-
-    </footer>
-  )
+          <FooterBottom />
+        </div>
+      </footer>
+    </>
+  );
 }
