@@ -1,18 +1,22 @@
 export const statistics = [
   {
-    value: "12K+",
-    label: "Happy Clients",
+    number: 1200,
+    suffix: "+",
+    title: "Happy Clients",
   },
   {
-    value: "240+",
-    label: "Projects Completed",
+    number: 250,
+    suffix: "+",
+    title: "Projects Completed",
   },
   {
-    value: "99%",
-    label: "Customer Satisfaction",
+    number: 99,
+    suffix: "%",
+    title: "Customer Satisfaction",
   },
   {
-    value: "24/7",
-    label: "Support Available",
+    number: 24,
+    suffix: "/7",
+    title: "Support Available",
   },
 ];

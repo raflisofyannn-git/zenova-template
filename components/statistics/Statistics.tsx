@@ -1,32 +1,35 @@
 import FadeUp from "@/components/animation/FadeUp";
-import FeatureCard from "./FeatureCard";
-import { features } from "@/data/features";
+
+import StatisticCard from "./StatisticCard";
+
+import { statistics } from "@/data/statistics";
 
 import SectionBadge from "@/components/common/SectionBadge";
 import SectionContainer from "@/components/common/SectionContainer";
 import SectionDescription from "@/components/common/SectionDescription";
 import SectionTitle from "@/components/common/SectionTitle";
 
-export default function Features() {
+export default function Statistics() {
   return (
     <section className="relative overflow-hidden py-32">
 
       {/* Background */}
-      <div className="absolute inset-0 -z-20 bg-gradient-to-b from-background via-background to-primary/5" />
+
+      <div className="absolute inset-0 -z-20 bg-gradient-to-b from-background to-primary/5" />
 
       {/* Glow */}
+
       <div
         className="
           absolute
-          left-1/2
+          right-0
           top-20
           -z-10
-          h-[450px]
-          w-[450px]
-          -translate-x-1/2
+          h-[500px]
+          w-[500px]
           rounded-full
           bg-primary/10
-          blur-[140px]
+          blur-[180px]
         "
       />
 
@@ -37,21 +40,19 @@ export default function Features() {
           <FadeUp>
 
             <SectionBadge>
-              Why Choose Aureon
+              Our Impact
             </SectionBadge>
 
             <SectionTitle>
-              Everything You Need to Build Premium Websites
+              Trusted by Businesses Worldwide
             </SectionTitle>
 
             <SectionDescription>
-              Carefully crafted components designed for agencies,
-              startups, and modern businesses.
+              Thousands of companies rely on Aureon to build
+              modern, scalable digital experiences.
             </SectionDescription>
 
           </FadeUp>
-
-          {/* Divider */}
 
           <FadeUp delay={0.15}>
             <div
@@ -74,15 +75,19 @@ export default function Features() {
             grid
             gap-8
             md:grid-cols-2
-            xl:grid-cols-3
+            xl:grid-cols-4
           "
         >
-          {features.map((feature, index) => (
+          {statistics.map((item, index) => (
             <FadeUp
-              key={feature.title}
-              delay={index * 0.1}
+              key={item.title}
+              delay={index * 0.15}
             >
-              <FeatureCard {...feature} />
+              <StatisticCard
+                number={item.number}
+                suffix={item.suffix}
+                title={item.title}
+              />
             </FadeUp>
           ))}
         </div>
