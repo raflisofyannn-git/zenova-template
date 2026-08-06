@@ -1,33 +1,43 @@
 import FadeUp from "@/components/animation/FadeUp";
 import { Button } from "@/components/ui/button";
+
+import SectionBadge from "@/components/common/SectionBadge";
+import SectionTitle from "@/components/common/SectionTitle";
+import SectionDescription from "@/components/common/SectionDescription";
+
 import { showcase } from "@/data/showcase";
 
 export default function ShowcaseContent() {
   return (
     <div className="max-w-xl">
+
       <FadeUp>
-        <span className="rounded-full bg-primary/10 px-4 py-2 text-sm font-semibold text-primary">
+        <SectionBadge>
           {showcase.badge}
-        </span>
+        </SectionBadge>
+      </FadeUp>
+
+      <FadeUp delay={0.1}>
+        <SectionTitle>
+          {showcase.title}
+        </SectionTitle>
       </FadeUp>
 
       <FadeUp delay={0.2}>
-        <h2 className="mt-8 text-5xl font-bold leading-tight">
-          {showcase.title}
-        </h2>
-      </FadeUp>
-
-      <FadeUp delay={0.4}>
-        <p className="mt-6 text-lg leading-8 text-muted-foreground">
+        <SectionDescription>
           {showcase.description}
-        </p>
+        </SectionDescription>
       </FadeUp>
 
-      <FadeUp delay={0.6}>
-        <Button size="lg" className="mt-10">
+      <FadeUp delay={0.3}>
+        <Button
+          size="lg"
+          className="mt-10 rounded-full px-8"
+        >
           {showcase.button}
         </Button>
       </FadeUp>
+
     </div>
   );
 }

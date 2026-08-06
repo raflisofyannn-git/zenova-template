@@ -1,70 +1,43 @@
 import FadeLeft from "@/components/animation/FadeLeft";
+import AboutDashboard from "./AboutDashboard";
 
 export default function AboutImage() {
   return (
-    <FadeLeft>
+    <div className="relative">
+      <FadeLeft>
+        <AboutDashboard />
+      </FadeLeft>
+
+      {/* Floating Card */}
       <div
         className="
-          relative
-          overflow-hidden
-          rounded-[36px]
+          absolute
+          -bottom-8
+          -right-8
+          rounded-3xl
           border
+          border-border/60
           bg-background
-          p-10
+          p-6
           shadow-2xl
         "
       >
-        {/* Header */}
-        <div className="mb-10 flex gap-2">
-          <div className="h-3 w-3 rounded-full bg-red-400" />
-          <div className="h-3 w-3 rounded-full bg-yellow-400" />
-          <div className="h-3 w-3 rounded-full bg-green-400" />
-        </div>
+        <p className="text-sm text-muted-foreground">
+          Monthly Revenue
+        </p>
 
-        {/* Dashboard */}
-        <div className="space-y-6">
+        <h3 className="mt-2 text-4xl font-black">
+          $54K
+        </h3>
 
-          <div className="h-6 w-56 rounded bg-slate-200" />
+        <div className="mt-4 flex items-center gap-2">
+          <div className="h-2 w-2 rounded-full bg-emerald-500" />
 
-          <div className="grid grid-cols-2 gap-5">
-
-            <div className="h-32 rounded-2xl bg-slate-100" />
-
-            <div className="h-32 rounded-2xl bg-slate-100" />
-
-          </div>
-
-          <div className="h-56 rounded-3xl bg-slate-100" />
-
-        </div>
-
-        {/* Floating Card */}
-        <div
-          className="
-            absolute
-            -right-8
-            bottom-10
-            rounded-3xl
-            border
-            bg-background
-            p-6
-            shadow-xl
-          "
-        >
-          <p className="text-sm text-muted-foreground">
-            Growth
-          </p>
-
-          <h3 className="mt-2 text-3xl font-bold">
-            +245%
-          </h3>
-
-          <p className="mt-2 text-sm text-emerald-600">
-            This Year
+          <p className="font-medium text-emerald-600">
+            +18.4% this month
           </p>
         </div>
-
       </div>
-    </FadeLeft>
+    </div>
   );
 }
