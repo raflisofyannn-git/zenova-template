@@ -5,6 +5,7 @@ import Hero from "@/components/sections/hero/Hero";
 import LogoCloud from "@/components/sections/logos/LogoCloud";
 import Showcase from "@/components/sections/showcase/Showcase";
 import Statistics from "@/components/sections/statistics/Statistics";
+import About from "@/components/sections/about/About";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
     <Hero />
     <LogoCloud />
     <Features />
+    <About />
     <Showcase />
     <Statistics />
     </main>
