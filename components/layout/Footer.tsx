@@ -110,7 +110,7 @@ export default function Footer() {
 
               <SocialIcon
                 label="Email"
-                href="mailto:hello@zenova.com"
+                href="mailto:hello@example.com"
                 icon={Mail}
               />
 
@@ -148,23 +148,23 @@ export default function Footer() {
 
             <div className="mt-6 space-y-4 text-sm text-slate-400">
               <a
-                href="mailto:hello@zenova.com"
+                href="mailto:hello@example.com"
                 className="block transition-colors hover:text-white"
               >
-                hello@zenova.com
+                hello@example.com
               </a>
 
               <a
                 href="tel:+15551234567"
                 className="block transition-colors hover:text-white"
               >
-                +1 (555) 123-4567
+                +1 (000) 000-0000
               </a>
 
               <p>
-                San Francisco,
+                Your City,
                 <br />
-                California
+                Your Country
               </p>
             </div>
 

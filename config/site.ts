@@ -4,11 +4,11 @@
   description:
     "Premium Business & Corporate Template",
 
-  url: "https://ZENOVA.com",
+  url: "https://example.com",
 
   logo: "/logo/logo.svg",
 
-  email: "hello@ZENOVA.com",
+  email: "hello@example.com",
 
   phone: "+62 81234567890",
 

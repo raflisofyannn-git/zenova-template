@@ -167,19 +167,19 @@ export default function Contact() {
                 <ContactInfo
                   icon={Mail}
                   title="Email"
-                  value="hello@zenova.com"
+                  value="hello@example.comm"
                 />
 
                 <ContactInfo
                   icon={Phone}
                   title="Phone"
-                  value="+1 (555) 123-4567"
+                  value="+1 (000) 000-0000"
                 />
 
                 <ContactInfo
                   icon={MapPin}
                   title="Office"
-                  value="San Francisco, California"
+                  value="Your City, Your Country"
                 />
               </div>
             </div>

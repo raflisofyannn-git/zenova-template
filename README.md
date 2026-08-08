@@ -1,36 +1,66 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Zenova
 
-## Getting Started
+### Premium Next.js SaaS & Agency Website Template
 
-First, run the development server:
+Zenova is a modern, responsive, and production-ready website template built for SaaS companies, startups, digital agencies, technology companies, and modern businesses.
+
+Built with Next.js, React, TypeScript, and Tailwind CSS, Zenova provides a clean component architecture that is easy to customize and extend.
+
+---
+
+## ✨ Features
+
+- Modern premium UI
+- Fully responsive design
+- Next.js 16
+- React 19
+- TypeScript
+- Tailwind CSS 4
+- Framer Motion animations
+- Reusable components
+- Responsive navigation
+- Mobile menu
+- Dashboard mockup
+- Feature sections
+- Services section
+- Project showcase
+- Statistics section
+- Testimonials
+- Pricing section
+- FAQ section
+- CTA section
+- Contact section
+- Footer
+- Smooth scrolling
+- SEO-ready structure
+- Static production build
+- Clean and organized project structure
+
+---
+
+## 🛠 Tech Stack
+
+| Technology | Version |
+|---|---|
+| Next.js | 16 |
+| React | 19 |
+| TypeScript | 5 |
+| Tailwind CSS | 4 |
+| Framer Motion | 13 |
+| Lucide React | Latest |
+| React CountUp | 6 |
+
+---
+
+# 🚀 Requirements
+
+Before installing Zenova, make sure you have:
+
+- Node.js 20+
+- npm 10+
+- Git
+
+You can verify your Node.js version with:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+node -v
