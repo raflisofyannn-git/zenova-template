@@ -49,8 +49,8 @@
     description:
       "Complete online shopping platform.",
     technologies: [
-      "Stripe",
-      "Next.js",
-    ],
+    "Payments",
+    "Next.js",
+  ],
   },
 ];

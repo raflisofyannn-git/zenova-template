@@ -1,76 +1,155 @@
-ZENOVA COMMERCIAL SINGLE-PROJECT LICENSE
+ZENOVA COMMERCIAL LICENSE
 Version 1.0.0
 
 Copyright © 2026 Zenova.
 All rights reserved.
 
-1. GRANT OF LICENSE
+==================================================
+1. LICENSE OVERVIEW
+==================================================
 
-The purchaser is granted a limited, non-exclusive,
-non-transferable license to use and modify the Zenova
-template for personal or commercial website projects.
+Zenova is a premium website template distributed under
+a tiered commercial license.
 
-The purchaser may use the template to create a website
-for themselves or for a client.
+The license purchased determines how the template may
+be used.
 
-2. PERMITTED USE
+The purchaser receives a license to use and modify the
+Zenova source code according to the selected license tier.
+
+Ownership of the original Zenova source code remains with
+the original author/seller.
+
+==================================================
+2. PERSONAL LICENSE — $29
+==================================================
+
+The Personal License permits the purchaser to use Zenova
+for ONE (1) personal or self-owned project.
 
 The purchaser may:
 
-- Install and use Zenova on their own computer.
+- Install and use Zenova locally.
 - Modify the source code.
-- Customize colors, typography, content, images,
-  components, and layouts.
-- Create websites for personal or commercial use.
-- Use the resulting website for a client project.
-- Deploy the resulting website to a public hosting service.
-- Create multiple pages based on the template within
-  the licensed project.
+- Change colors, typography, content, images, and layouts.
+- Deploy the resulting website publicly.
+- Use the resulting website for a personal project.
+- Use the resulting website for their own business website.
 
-3. RESTRICTIONS
+The Personal License does NOT permit:
 
-The purchaser may NOT:
+- Using the template for multiple unrelated projects.
+- Using the template to build websites for multiple clients.
+- Reselling the Zenova source code.
+- Redistributing the original template package.
+- Uploading the source code to a public repository.
+- Selling Zenova as another template or digital product.
 
-- Resell Zenova as a website template.
-- Redistribute the original source code.
-- Share the downloaded package publicly.
-- Upload the source code to a public repository.
-- Sell, sublicense, lease, rent, or transfer the template
-  itself to another person.
-- Include Zenova source code in another template or
-  downloadable product intended for redistribution.
-- Use Zenova as the primary source material for creating
-  another competing template for sale.
-- Distribute the original package through torrent,
-  file-sharing services, public repositories, or other
-  download platforms.
+==================================================
+3. COMMERCIAL LICENSE — $49
+==================================================
 
-4. CLIENT PROJECTS
+The Commercial License permits the purchaser to use Zenova
+for commercial website projects, including websites created
+for clients.
 
-The purchaser may use Zenova to build websites for clients.
+The purchaser may:
 
-The purchaser may deliver the final customized website
-to the client as part of a client project.
+- Use Zenova for commercial projects.
+- Create a website for a client.
+- Modify the source code.
+- Customize the design and content.
+- Deploy the resulting website publicly.
+- Deliver the completed customized website to the client.
 
-However, the purchaser may not transfer or distribute the
-original Zenova template package separately to the client.
+The Commercial License does NOT permit:
 
-5. OWNERSHIP
+- Reselling the original Zenova template.
+- Redistributing the original source code.
+- Giving the original template package to a client as a
+  standalone product.
+- Uploading Zenova source code to a public repository.
+- Selling Zenova or substantially similar source code as
+  another website template.
+
+The license applies to the purchased project usage and does
+not transfer ownership of the Zenova source code.
+
+==================================================
+4. AGENCY LICENSE — $99
+==================================================
+
+The Agency License is intended for agencies, studios, and
+teams that need to use Zenova across multiple client projects.
+
+The purchaser may:
+
+- Use Zenova across multiple client projects.
+- Modify the source code.
+- Create commercial websites for clients.
+- Deploy completed websites publicly.
+- Customize the template for individual clients.
+- Maintain separate client projects using Zenova.
+
+The Agency License does NOT permit:
+
+- Reselling Zenova as a standalone template.
+- Redistributing the original Zenova package.
+- Uploading the original source code publicly.
+- Selling modified versions of Zenova as competing templates.
+- Giving clients the original Zenova package as a standalone
+  downloadable product.
+
+==================================================
+5. CLIENT PROJECTS
+==================================================
+
+Commercial and Agency licenses may be used to create websites
+for clients.
+
+The completed customized website may be delivered to the client
+as part of the project.
+
+However, the original Zenova source code and template package
+must not be distributed separately as a standalone product.
+
+==================================================
+6. SOURCE CODE REDISTRIBUTION
+==================================================
+
+The Zenova source code may not be:
+
+- Resold.
+- Sublicensed.
+- Redistributed.
+- Uploaded to public repositories.
+- Shared through file-sharing services.
+- Included in another template marketplace product.
+- Distributed as part of a competing template.
+- Published as a free downloadable source package.
+
+==================================================
+7. OWNERSHIP
+==================================================
 
 Zenova and its original source code remain the intellectual
 property of the original author/seller.
 
-This license grants usage rights only and does not transfer
-ownership of the template.
+Purchasing a license does not transfer ownership of the
+template.
 
-6. THIRD-PARTY SOFTWARE
+The purchaser receives only the usage rights described by
+the selected license tier.
 
-Zenova may include or depend on third-party open-source
-libraries.
+==================================================
+8. THIRD-PARTY DEPENDENCIES
+==================================================
 
-Those libraries remain subject to their respective licenses.
+Zenova uses third-party open-source libraries.
 
-Examples may include:
+These dependencies remain subject to their own licenses.
+
+Examples include:
 
 - Next.js
 - React
@@ -78,49 +157,17 @@ Examples may include:
 - Tailwind CSS
 - Framer Motion
 - Lucide React
-- Other npm dependencies included in package.json
+- React Hook Form
+- Zod
+- Swiper
+- Embla Carousel
+- Other dependencies listed in package.json
 
-Users are responsible for complying with the licenses of
-third-party dependencies.
+Users must comply with the licenses applicable to those
+third-party libraries.
 
-7. ASSETS
+==================================================
+9. ASSETS
+==================================================
 
-Images, fonts, logos, icons, illustrations, or other assets
-included with Zenova may have separate licenses.
-
-Third-party assets remain subject to their respective
-license terms.
-
-8. NO WARRANTY
-
-Zenova is provided "AS IS" without warranties of any kind,
-express or implied.
-
-The seller does not guarantee that Zenova will be compatible
-with every third-party service, hosting provider, browser,
-operating system, or future software version.
-
-9. SUPPORT
-
-Support is provided according to the support policy of the
-marketplace or seller through which Zenova was purchased.
-
-Support does not include building custom applications,
-custom integrations, or major modifications on behalf of
-the purchaser unless separately agreed.
-
-10. TERMINATION
-
-This license automatically terminates if the purchaser
-violates the restrictions described in this agreement.
-
-Upon termination, the purchaser must stop redistributing
-the template and remove unauthorized copies from public
-distribution.
-
-11. ACCEPTANCE
-
-By purchasing, downloading, installing, or using Zenova,
-the purchaser agrees to the terms of this license.
-
-END OF LICENSE
+Zenova

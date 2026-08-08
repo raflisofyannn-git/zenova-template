@@ -4,27 +4,27 @@ import SectionContainer from "@/components/common/SectionContainer";
 
 const logos = [
   {
-    name: "Google",
+    name: "NOVA",
     src: "/logos/google.svg",
   },
   {
-    name: "Microsoft",
+    name: "VERTEX",
     src: "/logos/microsoft.svg",
   },
   {
-    name: "Spotify",
+    name: "ORBIT",
     src: "/logos/spotify.svg",
   },
   {
-    name: "Stripe",
-    src: "/logos/stripe.svg",
-  },
-  {
-    name: "Slack",
+    name: "PULSE",
     src: "/logos/slack.svg",
   },
   {
-    name: "Airbnb",
+    name: "NEXA",
+    src: "/logos/stripe.svg",
+  },
+  {
+    name: "APEX",
     src: "/logos/airbnb.svg",
   },
 ];

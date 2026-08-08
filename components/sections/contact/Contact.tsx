@@ -167,7 +167,7 @@ export default function Contact() {
                 <ContactInfo
                   icon={Mail}
                   title="Email"
-                  value="hello@example.comm"
+                  value="hello@example.com"
                 />
 
                 <ContactInfo

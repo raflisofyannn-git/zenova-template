@@ -1,26 +1,26 @@
 ﻿export const logoCloud = [
   {
-    name: "Google",
+    name: "NOVA",
     logo: "/logos/google.svg",
   },
   {
-    name: "Microsoft",
+    name: "VERTEX",
     logo: "/logos/microsoft.svg",
   },
   {
-    name: "Spotify",
+    name: "ORBIT",
     logo: "/logos/spotify.svg",
   },
   {
-    name: "Slack",
+    name: "PULSE",
     logo: "/logos/slack.svg",
   },
   {
-    name: "Stripe",
+    name: "NEXA",
     logo: "/logos/stripe.svg",
   },
   {
-    name: "Airbnb",
+    name: "APEX",
     logo: "/logos/airbnb.svg",
   },
 ];
