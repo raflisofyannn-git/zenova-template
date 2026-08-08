@@ -1,27 +1,31 @@
+import {
+  ArrowUpRight,
+  CreditCard,
+  FolderKanban,
+  UserPlus,
+} from "lucide-react";
+
 const activities = [
   {
+    icon: CreditCard,
     title: "Payment Received",
-    description: "Invoice INV-024 has been paid",
+    subtitle: "Enterprise Plan",
     time: "2 min ago",
-    color: "bg-emerald-500",
+    color: "bg-emerald-100 text-emerald-600",
   },
   {
-    title: "New Invoice",
-    description: "Invoice INV-025 created",
-    time: "15 min ago",
-    color: "bg-blue-500",
-  },
-  {
+    icon: UserPlus,
     title: "New Customer",
-    description: "John Anderson joined",
-    time: "1 hour ago",
-    color: "bg-violet-500",
+    subtitle: "John Anderson",
+    time: "15 min ago",
+    color: "bg-cyan-100 text-cyan-600",
   },
   {
-    title: "Project Completed",
-    description: "Landing Page finished",
-    time: "Today",
-    color: "bg-orange-500",
+    icon: FolderKanban,
+    title: "Project Created",
+    subtitle: "Zenova Dashboard",
+    time: "1 hour ago",
+    color: "bg-violet-100 text-violet-600",
   },
 ];
 
@@ -29,55 +33,83 @@ export default function ActivityList() {
   return (
     <div
       className="
-        group
-        rounded-3xl
+        rounded-[28px]
         border
         border-border/60
-        bg-card
+        bg-white/80
         p-6
-        transition-all
-        duration-500
-        hover:border-primary/30
-        hover:shadow-xl
+        backdrop-blur-xl
       "
     >
       <div className="mb-6 flex items-center justify-between">
-        <h3 className="text-lg font-bold">
-          Recent Activity
-        </h3>
 
-        <span className="rounded-full bg-primary/10 px-3 py-1 text-xs font-semibold text-primary">
-          Live
-        </span>
+        <div>
+
+          <h3 className="text-lg font-bold">
+            Recent Activity
+          </h3>
+
+          <p className="text-sm text-muted-foreground">
+            Latest updates
+          </p>
+
+        </div>
+
+        <ArrowUpRight
+          size={18}
+          className="text-muted-foreground"
+        />
+
       </div>
 
       <div className="space-y-5">
-        {activities.map((item) => (
-          <div
-            key={item.title}
-            className="flex items-start gap-4 rounded-2xl p-3 transition hover:bg-muted/40"
-          >
+
+        {activities.map((item) => {
+          const Icon = item.icon;
+
+          return (
             <div
-              className={`mt-1.5 h-3 w-3 rounded-full ${item.color}`}
-            />
-
-            <div className="flex-1">
-              <div className="flex items-center justify-between">
-                <p className="font-semibold">
-                  {item.title}
-                </p>
-
-                <span className="text-xs text-muted-foreground">
-                  {item.time}
-                </span>
+              key={item.title}
+              className="
+                flex
+                items-center
+                gap-4
+              "
+            >
+              <div
+                className={`
+                  flex
+                  h-12
+                  w-12
+                  items-center
+                  justify-center
+                  rounded-2xl
+                  ${item.color}
+                `}
+              >
+                <Icon size={20} />
               </div>
 
-              <p className="mt-1 text-sm text-muted-foreground">
-                {item.description}
-              </p>
+              <div className="flex-1">
+
+                <h4 className="font-semibold">
+                  {item.title}
+                </h4>
+
+                <p className="text-sm text-muted-foreground">
+                  {item.subtitle}
+                </p>
+
+              </div>
+
+              <span className="text-xs text-muted-foreground">
+                {item.time}
+              </span>
+
             </div>
-          </div>
-        ))}
+          );
+        })}
+
       </div>
     </div>
   );

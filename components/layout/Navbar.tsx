@@ -1,11 +1,16 @@
+"use client";
+
+import { useState } from "react";
 import Link from "next/link";
+import { Menu, X } from "lucide-react";
 
 import Logo from "./Logo";
-
-import { menu } from "@/config/menu";
 import { Button } from "@/components/ui/button";
+import { menu } from "@/config/menu";
 
 export default function Navbar() {
+  const [open, setOpen] = useState(false);
+
   return (
     <header
       className="
@@ -26,12 +31,13 @@ export default function Navbar() {
           max-w-7xl
           items-center
           justify-between
-          px-8
+          px-6
         "
       >
         <Logo />
 
         <nav className="hidden items-center gap-10 lg:flex">
+
           {menu.map((item) => (
             <Link
               key={item.title}
@@ -39,28 +45,85 @@ export default function Navbar() {
               className="
                 text-sm
                 font-medium
-                text-muted-foreground
-                transition-all
-                duration-300
-                hover:text-foreground
+                transition
+                hover:text-indigo-600
               "
             >
               {item.title}
             </Link>
           ))}
+
         </nav>
 
-        <Button
+        <div className="hidden lg:block">
+
+          <Button
+            className="
+              bg-gradient-to-r
+              from-indigo-600
+              via-violet-600
+              to-cyan-500
+            "
+          >
+            Get Started
+          </Button>
+
+        </div>
+
+        <button
+          onClick={() => setOpen(!open)}
+          className="lg:hidden"
+        >
+          {open ? (
+            <X size={26} />
+          ) : (
+            <Menu size={26} />
+          )}
+        </button>
+
+      </div>
+
+      {open && (
+
+        <div
           className="
-            hidden
-            rounded-full
-            px-6
-            lg:inline-flex
+            border-t
+            bg-background
+            lg:hidden
           "
         >
-          Get Started
-        </Button>
-      </div>
+          <div className="flex flex-col p-6">
+
+            {menu.map((item) => (
+
+              <Link
+                key={item.title}
+                href={item.href}
+                onClick={() => setOpen(false)}
+                className="py-4"
+              >
+                {item.title}
+              </Link>
+
+            ))}
+
+            <Button
+              className="
+                mt-6
+                bg-gradient-to-r
+                from-indigo-600
+                via-violet-600
+                to-cyan-500
+              "
+            >
+              Get Started
+            </Button>
+
+          </div>
+
+        </div>
+
+      )}
     </header>
   );
 }

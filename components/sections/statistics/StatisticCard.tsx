@@ -49,7 +49,12 @@ export default function StatisticCard({
         "
       />
 
-      <h3 className="relative text-5xl font-black text-primary">
+      <h3 className="relative text-5xl font-black bg-gradient-to-r
+from-indigo-600
+via-violet-600
+to-cyan-500
+bg-clip-text
+text-transparent">
         <CountUp
           end={number}
           duration={2}

@@ -23,16 +23,22 @@ export default function TestimonialCard({
   return (
     <div
       className="
+        group
         rounded-[32px]
         border
         border-border/60
         bg-background
         p-10
         shadow-xl
+        transition-all
+        duration-300
+        hover:-translate-y-2
+        hover:shadow-2xl
       "
     >
       <Quote
-        size={36}
+        size={42}
+        strokeWidth={1.5}
         className="text-primary"
       />
 
@@ -44,25 +50,27 @@ export default function TestimonialCard({
         <RatingStars rating={rating} />
       </div>
 
-      <div className="mt-8 flex items-center gap-4">
+      <div className="mt-8 flex items-center gap-5">
+        <div className="shrink-0">
+          <Avatar
+            src={avatar}
+            alt={name}
+          />
+        </div>
 
-        <Avatar
-          src={avatar}
-          alt={name}
-        />
-
-        <div>
-
-          <h4 className="font-semibold">
+        <div className="flex-1">
+          <h4 className="text-lg font-semibold">
             {name}
           </h4>
 
-          <p className="text-sm text-muted-foreground">
-            {position} · {company}
+          <p className="mt-1 text-sm text-muted-foreground">
+            {position}
           </p>
 
+          <p className="text-sm text-primary font-medium">
+            {company}
+          </p>
         </div>
-
       </div>
     </div>
   );

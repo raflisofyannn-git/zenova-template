@@ -1,19 +1,54 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
-import { ThemeProvider } from "@/providers/ThemeProvider";
 import "./globals.css";
-import { cn } from "@/lib/utils";
-
-const geist = Geist({subsets:['latin'],variable:'--font-sans'});
-
-const geistMono = Geist_Mono({
-  variable: "--font-mono",
-  subsets: ["latin"],
-});
 
 export const metadata: Metadata = {
-  title: "Company Template",
-  description: "Premium Landing Page Template",
+  title: {
+    default: "Zenova",
+    template: "%s | Zenova",
+  },
+
+  description:
+    "Premium Next.js template for startups, SaaS, agencies and modern businesses.",
+
+  keywords: [
+    "Next.js",
+    "Tailwind CSS",
+    "React",
+    "SaaS",
+    "Agency",
+    "Business",
+    "Dashboard",
+    "Zenova",
+  ],
+
+  authors: [
+    {
+      name: "Zenova",
+    },
+  ],
+
+  creator: "Zenova",
+
+  metadataBase: new URL("https://zenova-template.vercel.app"),
+
+  openGraph: {
+    title: "Zenova",
+    description:
+      "Premium Next.js Template",
+    type: "website",
+    locale: "en_US",
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "Zenova",
+    description:
+      "Premium Next.js Template",
+  },
+
+  icons: {
+    icon: "/favicon.ico",
+  },
 };
 
 export default function RootLayout({
@@ -22,25 +57,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html
-      lang="en"
-      suppressHydrationWarning className={cn("font-sans", geist.variable)}
-    >
-      <body
-        className={`
-          ${geist.variable}
-          ${geistMono.variable}
-          antialiased
-        `}
-      >
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="light"
-          enableSystem
-        >
-          {children}
-        </ThemeProvider>
-      </body>
+    <html lang="en">
+      <body>{children}</body>
     </html>
   );
 }

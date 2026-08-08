@@ -1,11 +1,6 @@
-export const site = {
-  name: "Aureon",
+export const siteConfig = {
+  name: "Zenova",
+  tagline: "Modern SaaS Template",
   description:
-    "Premium Next.js Company Template",
-
-  email: "hello@aureon.com",
-
-  phone: "+1 (555) 123-4567",
-
-  location: "New York, USA",
+    "Modern Next.js template for startups, SaaS, agencies, and digital businesses.",
 };

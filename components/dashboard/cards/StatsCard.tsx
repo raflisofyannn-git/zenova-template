@@ -1,13 +1,11 @@
 interface Props {
   title: string;
   value: string;
-  change: string;
 }
 
 export default function StatsCard({
   title,
   value,
-  change,
 }: Props) {
   return (
     <div
@@ -18,24 +16,29 @@ export default function StatsCard({
         rounded-3xl
         border
         border-border/60
-        bg-card
-        p-5
+        bg-white/70
+        p-6
+        backdrop-blur-xl
         transition-all
         duration-500
-        hover:-translate-y-1
-        hover:border-primary/30
-        hover:shadow-xl
+        hover:-translate-y-2
+        hover:border-indigo-300
+        hover:shadow-2xl
       "
     >
-      {/* Glow */}
       <div
         className="
           absolute
-          inset-0
+          -right-10
+          -top-10
+          h-28
+          w-28
+          rounded-full
           bg-gradient-to-br
-          from-primary/5
-          via-transparent
-          to-transparent
+          from-indigo-500/20
+          via-violet-500/20
+          to-cyan-500/20
+          blur-3xl
           opacity-0
           transition
           duration-500
@@ -43,29 +46,28 @@ export default function StatsCard({
         "
       />
 
-      {/* Header */}
-      <div className="relative flex items-center justify-between">
-        <p className="text-sm font-medium text-muted-foreground">
-          {title}
-        </p>
+      <p className="relative text-sm font-medium text-muted-foreground">
+        {title}
+      </p>
 
-        <div
-          className="
-            h-3
-            w-3
-            rounded-full
-            bg-emerald-500
-          "
-        />
-      </div>
-
-      {/* Value */}
-      <h3 className="relative mt-4 text-3xl font-black tracking-tight">
+      <h3
+        className="
+          relative
+          mt-3
+          bg-gradient-to-r
+          from-indigo-600
+          via-violet-600
+          to-cyan-500
+          bg-clip-text
+          text-3xl
+          font-black
+          text-transparent
+        "
+      >
         {value}
       </h3>
 
-      {/* Trend */}
-      <div className="relative mt-4 flex items-center gap-2">
+      <div className="relative mt-5 flex items-center gap-2">
         <span
           className="
             rounded-full
@@ -73,16 +75,16 @@ export default function StatsCard({
             px-2.5
             py-1
             text-xs
-            font-bold
+            font-semibold
             text-emerald-700
           "
         >
-          ▲ {change}
+          +12.5%
         </span>
 
-        <span className="text-xs text-muted-foreground">
+        <p className="text-xs text-muted-foreground">
           this month
-        </span>
+        </p>
       </div>
     </div>
   );

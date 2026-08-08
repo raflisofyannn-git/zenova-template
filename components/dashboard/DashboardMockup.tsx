@@ -15,15 +15,15 @@ export default function DashboardMockup() {
     <div
       className="
         relative
-        h-[520px]
-        w-[620px]
+        w-full
+        max-w-[720px]
         overflow-hidden
         rounded-[36px]
         border
-        border-border/60
-        bg-background/95
-        shadow-2xl
-        backdrop-blur
+        border-white/40
+        bg-white/85
+        shadow-[0_40px_120px_rgba(79,70,229,0.18)]
+        backdrop-blur-2xl
       "
     >
       {/* Background Glow */}
@@ -32,17 +32,34 @@ export default function DashboardMockup() {
           absolute
           -right-24
           -top-24
-          h-72
-          w-72
+          h-80
+          w-80
           rounded-full
-          bg-primary/10
+          bg-gradient-to-br
+          from-indigo-500/20
+          via-violet-500/20
+          to-cyan-500/20
           blur-[120px]
+        "
+      />
+
+      <div
+        className="
+          absolute
+          -bottom-32
+          -left-24
+          h-96
+          w-96
+          rounded-full
+          bg-cyan-400/10
+          blur-[140px]
         "
       />
 
       <BrowserHeader />
 
-      <div className="flex h-[calc(100%-64px)]">
+      <div className="flex h-[560px]">
+
         <Sidebar />
 
         <div
@@ -51,51 +68,120 @@ export default function DashboardMockup() {
             flex-1
             overflow-hidden
             border-l
-            border-border/60
-            bg-background/40
-            p-5
-            space-y-6
+            border-border/50
+            bg-gradient-to-br
+            from-white
+            via-slate-50
+            to-indigo-50/40
+            p-6
           "
         >
-          <StatsGrid />
+          <div className="space-y-6">
 
-          <RevenueChart />
+            <StatsGrid />
 
-          <div className="grid grid-cols-2 gap-5">
-            <ActivityList />
-            <ProgressCard />
-          </div>
+            <RevenueChart />
 
-          <div className="grid grid-cols-2 gap-5">
-            <TeamMembers />
-            <NotificationCard />
+            <div className="grid grid-cols-2 gap-6">
+
+              <ActivityList />
+
+              <ProgressCard />
+
+            </div>
+
+            <div className="grid grid-cols-2 gap-6">
+
+              <TeamMembers />
+
+              <NotificationCard />
+
+            </div>
+
           </div>
 
           {/* Floating Analytics */}
+
           <div
             className="
               absolute
               right-6
               top-6
-              rounded-2xl
+              rounded-3xl
               border
-              border-border/60
-              bg-background
-              px-4
-              py-3
+              border-white/40
+              bg-white/90
+              px-5
+              py-4
               shadow-xl
+              backdrop-blur-xl
             "
           >
             <p className="text-xs text-muted-foreground">
-              Conversion
+              Conversion Rate
             </p>
 
-            <h4 className="mt-1 text-xl font-bold">
+            <h3
+              className="
+                mt-2
+                bg-gradient-to-r
+                from-indigo-600
+                via-violet-600
+                to-cyan-500
+                bg-clip-text
+                text-3xl
+                font-black
+                text-transparent
+              "
+            >
               18.4%
-            </h4>
+            </h3>
+
+            <p className="mt-2 text-xs text-emerald-600">
+              ▲ +3.8% this week
+            </p>
           </div>
+
+          {/* Live */}
+
+          <div
+            className="
+              absolute
+              bottom-6
+              right-6
+              flex
+              items-center
+              gap-3
+              rounded-full
+              border
+              border-white/40
+              bg-white/90
+              px-5
+              py-3
+              shadow-xl
+              backdrop-blur-xl
+            "
+          >
+            <div
+              className="
+                h-3
+                w-3
+                animate-pulse
+                rounded-full
+                bg-emerald-500
+              "
+            />
+
+            <span className="text-sm font-medium">
+              Live Dashboard
+            </span>
+
+          </div>
+
         </div>
+
       </div>
+
     </div>
   );
 }

@@ -1,0 +1,47 @@
+export const pricing = [
+  {
+    name: "Starter",
+    price: "$29",
+    period: "/month",
+    popular: false,
+    description: "Perfect for individuals and startups.",
+    features: [
+      "1 Website",
+      "Unlimited Projects",
+      "Basic Analytics",
+      "Email Support",
+      "Free Updates",
+    ],
+    button: "Get Started",
+  },
+  {
+    name: "Professional",
+    price: "$79",
+    period: "/month",
+    popular: true,
+    description: "Best choice for growing businesses.",
+    features: [
+      "10 Websites",
+      "Advanced Analytics",
+      "Team Collaboration",
+      "Priority Support",
+      "Premium Components",
+    ],
+    button: "Start Free Trial",
+  },
+  {
+    name: "Enterprise",
+    price: "Custom",
+    period: "",
+    popular: false,
+    description: "For large companies and organizations.",
+    features: [
+      "Unlimited Websites",
+      "Dedicated Manager",
+      "Custom Integration",
+      "24/7 Support",
+      "Lifetime Updates",
+    ],
+    button: "Contact Sales",
+  },
+];

@@ -1,43 +1,49 @@
 export default function ProgressCard() {
   return (
-    <div className="rounded-2xl border bg-card p-6">
-      <h3 className="text-lg font-semibold">
-        Project Progress
+    <div
+      className="
+        rounded-[28px]
+        border
+        border-border/60
+        bg-white/80
+        p-6
+        backdrop-blur-xl
+      "
+    >
+      <p className="text-sm text-muted-foreground">
+        Monthly Goal
+      </p>
+
+      <h3 className="mt-2 text-3xl font-black">
+        82%
       </h3>
 
-      <div className="mt-8 space-y-6">
-        <div>
-          <div className="mb-2 flex justify-between">
-            <span>UI Design</span>
-            <span>90%</span>
-          </div>
+      <div className="mt-8 h-3 overflow-hidden rounded-full bg-slate-200">
 
-          <div className="h-2 rounded-full bg-muted">
-            <div className="h-2 w-[90%] rounded-full bg-primary" />
-          </div>
-        </div>
+        <div
+          className="
+            h-full
+            w-[82%]
+            rounded-full
+            bg-gradient-to-r
+            from-indigo-600
+            via-violet-600
+            to-cyan-500
+          "
+        />
 
-        <div>
-          <div className="mb-2 flex justify-between">
-            <span>Development</span>
-            <span>75%</span>
-          </div>
+      </div>
 
-          <div className="h-2 rounded-full bg-muted">
-            <div className="h-2 w-[75%] rounded-full bg-primary" />
-          </div>
-        </div>
+      <div className="mt-6 flex justify-between">
 
-        <div>
-          <div className="mb-2 flex justify-between">
-            <span>Marketing</span>
-            <span>62%</span>
-          </div>
+        <span className="text-sm text-muted-foreground">
+          Progress
+        </span>
 
-          <div className="h-2 rounded-full bg-muted">
-            <div className="h-2 w-[62%] rounded-full bg-primary" />
-          </div>
-        </div>
+        <span className="font-semibold text-indigo-600">
+          82%
+        </span>
+
       </div>
     </div>
   );

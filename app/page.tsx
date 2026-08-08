@@ -8,6 +8,10 @@ import Statistics from "@/components/sections/statistics/Statistics";
 import About from "@/components/sections/about/About";
 import Services from "@/components/sections/services/Services";
 import Testimonials from "@/components/sections/testimonials/Testimonials";
+import Pricing from "@/components/sections/pricing/Pricing";
+import FAQ from "@/components/sections/faq/FAQ";
+import CTA from "@/components/sections/cta/CTA";
+import Contact from "@/components/sections/contact/Contact";
 
 export default function Home() {
   return (
@@ -22,6 +26,10 @@ export default function Home() {
     <Showcase />
     <Statistics />
     <Testimonials />
+    <Pricing />
+    <FAQ />
+    <CTA />
+    <Contact />
     </main>
     <Footer />
 
