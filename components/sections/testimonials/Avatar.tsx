@@ -5,7 +5,10 @@ interface Props {
   alt: string;
 }
 
-export default function Avatar({ src, alt }: Props) {
+export default function Avatar({
+  src,
+  alt,
+}: Props) {
   return (
     <div
       className="
@@ -15,18 +18,22 @@ export default function Avatar({ src, alt }: Props) {
         shrink-0
         overflow-hidden
         rounded-full
-        border
-        border-border
-        bg-slate-100
+        bg-gradient-to-br
+        from-indigo-500
+        via-violet-500
+        to-cyan-500
+        p-[2px]
       "
     >
-      <Image
-        src={src}
-        alt={alt}
-        fill
-        sizes="56px"
-        className="object-cover"
-      />
+      <div className="relative h-full w-full overflow-hidden rounded-full bg-white">
+        <Image
+          src={src}
+          alt={alt}
+          fill
+          sizes="56px"
+          className="object-cover"
+        />
+      </div>
     </div>
   );
 }

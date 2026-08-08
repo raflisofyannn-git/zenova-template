@@ -1,17 +1,29 @@
 import FadeUp from "@/components/animation/FadeUp";
 import { testimonials } from "@/data/testimonials";
+
 import TestimonialCard from "./TestimonialCard";
 
 export default function TestimonialCarousel() {
   return (
-    <div className="mt-20 grid gap-8 lg:grid-cols-3">
+    <div
+      className="
+        mt-16
+        grid
+        items-stretch
+        gap-6
+        md:grid-cols-2
+        lg:grid-cols-3
+      "
+    >
       {testimonials.map((item, index) => (
-        <FadeUp
+        <div
           key={item.id}
-          delay={index * 0.15}
+          className="h-full"
         >
-          <TestimonialCard {...item} />
-        </FadeUp>
+          <FadeUp delay={index * 0.12}>
+            <TestimonialCard {...item} />
+          </FadeUp>
+        </div>
       ))}
     </div>
   );

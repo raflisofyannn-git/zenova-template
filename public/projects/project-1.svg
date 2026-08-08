@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="750" viewBox="0 0 1200 750">
+  <rect width="1200" height="750" rx="32" fill="#eef2ff"/>
+
+  <rect x="70" y="70" width="1060" height="610" rx="30" fill="#ffffff"/>
+  <rect x="70" y="70" width="1060" height="72" rx="30" fill="#f7f9fc"/>
+
+  <circle cx="110" cy="106" r="9" fill="#4b46e8"/>
+  <circle cx="140" cy="106" r="9" fill="#8555ed"/>
+  <circle cx="170" cy="106" r="9" fill="#12afd0"/>
+
+  <rect x="110" y="180" width="230" height="120" rx="20" fill="#eef2ff"/>
+  <rect x="370" y="180" width="230" height="120" rx="20" fill="#f3f0ff"/>
+  <rect x="630" y="180" width="230" height="120" rx="20" fill="#eafcff"/>
+  <rect x="890" y="180" width="190" height="120" rx="20" fill="#f7f9fb"/>
+
+  <rect x="110" y="336" width="650" height="269" rx="20" fill="#f7f9fc"/>
+  <rect x="790" y="336" width="290" height="269" rx="20" fill="#f7f9fc"/>
+
+  <!-- Main chart -->
+  <path d="M148 539
+           C198 502 250 505 300 466
+           C350 427 335 409 390 420
+           C445 431 464 454 507 430
+           C548 407 555 390 608 391
+           C652 391 678 400 701 385"
+        fill="none" stroke="#4b46e8" stroke-width="9" stroke-linecap="round"/>
+
+  <path d="M148 565
+           C205 549 253 551 304 529
+           C356 507 376 481 420 491
+           C470 502 501 510 541 493
+           C584 475 596 461 640 457
+           C670 454 696 455 711 440"
+        fill="none" stroke="#12afd0" stroke-width="7" stroke-linecap="round"/>
+
+  <!-- Donut chart -->
+  <circle cx="934" cy="470" r="70" fill="none"
+          stroke="#4b46e8" stroke-width="24"
+          stroke-dasharray="330 110"
+          transform="rotate(-70 934 470)"/>
+  <circle cx="934" cy="470" r="51" fill="#ffffff"/>
+</svg>

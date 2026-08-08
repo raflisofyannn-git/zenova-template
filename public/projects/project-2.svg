@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="750" viewBox="0 0 1200 750">
+  <rect width="1200" height="750" rx="32" fill="#f0efff"/>
+  <rect x="70" y="70" width="1060" height="610" rx="30" fill="#111827"/>
+
+  <!-- browser dots -->
+  <circle cx="110" cy="110" r="9" fill="#4b46e8"/>
+  <circle cx="140" cy="110" r="9" fill="#8555ed"/>
+  <circle cx="170" cy="110" r="9" fill="#12afd0"/>
+
+  <!-- headline -->
+  <text x="110" y="240" font-family="Arial, Helvetica, sans-serif" font-size="56" font-weight="800" fill="#ffffff">CREATE</text>
+  <text x="110" y="305" font-family="Arial, Helvetica, sans-serif" font-size="56" font-weight="800" fill="#9aaafc">SOMETHING</text>
+  <text x="110" y="370" font-family="Arial, Helvetica, sans-serif" font-size="56" font-weight="800" fill="#55d9ed">DIFFERENT.</text>
+
+  <!-- button -->
+  <rect x="110" y="430" width="190" height="55" rx="28" fill="#4b46e8"/>
+  <text x="205" y="466" text-anchor="middle" font-family="Arial, Helvetica, sans-serif"
+        font-size="18" font-weight="700" fill="#ffffff">Explore</text>
+
+  <!-- concentric circles -->
+  <circle cx="850" cy="370" r="190" fill="#242b66"/>
+  <circle cx="850" cy="370" r="130" fill="#493b91"/>
+  <circle cx="850" cy="370" r="70" fill="#159fc1"/>
+</svg>

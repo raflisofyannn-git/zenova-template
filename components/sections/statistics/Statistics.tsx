@@ -1,7 +1,6 @@
 import FadeUp from "@/components/animation/FadeUp";
 
 import StatisticCard from "@/components/sections/statistics/StatisticCard";
-
 import { statistics } from "@/data/statistics";
 
 import SectionBadge from "@/components/common/SectionBadge";
@@ -11,14 +10,28 @@ import SectionTitle from "@/components/common/SectionTitle";
 
 export default function Statistics() {
   return (
-    <section className="relative overflow-hidden py-32">
-
+    <section
+      className="
+        relative
+        overflow-hidden
+        py-20
+        lg:py-32
+      "
+    >
       {/* Background */}
+      <div
+        className="
+          absolute
+          inset-0
+          -z-20
+          bg-gradient-to-b
+          from-background
+          via-indigo-50/30
+          to-cyan-50/40
+        "
+      />
 
-      <div className="absolute inset-0 -z-20 bg-gradient-to-b from-background to-primary/5" />
-
-      {/* Glow */}
-
+      {/* Indigo Glow */}
       <div
         className="
           absolute
@@ -28,17 +41,30 @@ export default function Statistics() {
           h-[500px]
           w-[500px]
           rounded-full
-          bg-primary/10
+          bg-indigo-500/10
           blur-[180px]
         "
       />
 
-      <SectionContainer>
+      {/* Cyan Glow */}
+      <div
+        className="
+          absolute
+          bottom-0
+          left-0
+          -z-10
+          h-[400px]
+          w-[400px]
+          rounded-full
+          bg-cyan-500/10
+          blur-[160px]
+        "
+      />
 
+      <SectionContainer>
         <div className="mx-auto max-w-3xl text-center">
 
           <FadeUp>
-
             <SectionBadge>
               Our Impact
             </SectionBadge>
@@ -48,10 +74,10 @@ export default function Statistics() {
             </SectionTitle>
 
             <SectionDescription>
-              Thousands of companies rely on Aureon to build
-              modern, scalable digital experiences.
+              Thousands of companies rely on Zenova
+              to build modern, scalable and beautiful
+              digital experiences.
             </SectionDescription>
-
           </FadeUp>
 
           <FadeUp delay={0.15}>
@@ -59,29 +85,32 @@ export default function Statistics() {
               className="
                 mx-auto
                 mt-12
-                h-px
-                w-28
+                h-1
+                w-20
                 rounded-full
-                bg-border
+                bg-gradient-to-r
+                from-indigo-600
+                via-violet-600
+                to-cyan-500
               "
             />
           </FadeUp>
-
         </div>
 
         <div
           className="
-            mt-24
+            mt-20
             grid
-            gap-8
+            gap-6
             md:grid-cols-2
+            xl:mt-24
             xl:grid-cols-4
           "
         >
           {statistics.map((item, index) => (
             <FadeUp
               key={item.title}
-              delay={index * 0.15}
+              delay={index * 0.12}
             >
               <StatisticCard
                 number={item.number}
@@ -91,9 +120,7 @@ export default function Statistics() {
             </FadeUp>
           ))}
         </div>
-
       </SectionContainer>
-
     </section>
   );
 }

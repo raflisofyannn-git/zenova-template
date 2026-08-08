@@ -2,21 +2,26 @@ export const faq = [
   {
     question: "Can I use Zenova for commercial projects?",
     answer:
-      "Yes. You can use Zenova for personal and commercial websites without additional licensing fees.",
+      "Yes. Zenova is designed for both personal and commercial projects. You can customize the components, content and branding to match your business.",
   },
   {
-    question: "Does Zenova include free updates?",
+    question: "Is Zenova easy to customize?",
     answer:
-      "Absolutely. Every purchase includes lifetime updates and improvements.",
+      "Yes. The template uses reusable React components, TypeScript and Tailwind CSS, making it easy to change colors, typography, layouts and sections.",
   },
   {
-    question: "Is Zenova built with modern technologies?",
+    question: "Does Zenova work on mobile devices?",
     answer:
-      "Yes. Zenova is built using Next.js 16, React 19, Tailwind CSS v4, TypeScript and shadcn/ui.",
+      "Yes. Every major section is designed with responsive layouts for mobile, tablet and desktop screens.",
   },
   {
-    question: "Can I customize every component?",
+    question: "What technologies are included?",
     answer:
-      "Every section is fully componentized, making customization simple and scalable.",
+      "Zenova is built with Next.js, React, TypeScript, Tailwind CSS, shadcn/ui, Lucide icons and Framer Motion.",
+  },
+  {
+    question: "Can I create multiple websites with Zenova?",
+    answer:
+      "Yes. The component-based architecture allows you to reuse the system for different websites, brands and industries.",
   },
 ];

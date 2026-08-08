@@ -317,3 +317,141 @@ section {
   --chart-5: oklch(0.76 0.15 150);
 
 }
+
+@keyframes float {
+
+  0% {
+    transform:
+      translateY(0px);
+  }
+
+  50% {
+    transform:
+      translateY(-25px);
+  }
+
+  100% {
+    transform:
+      translateY(0px);
+  }
+
+}
+
+.float {
+
+  animation:
+    float
+    7s
+    ease-in-out
+    infinite;
+
+}
+
+.glass {
+
+  backdrop-filter:
+    blur(18px);
+
+}
+
+/* ===========================
+   ZENOVA PREMIUM ANIMATIONS
+=========================== */
+
+@keyframes zenova-gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.zenova-gradient {
+  background-size: 200% 200%;
+  animation:
+    zenova-gradient
+    8s
+    ease
+    infinite;
+}
+
+@keyframes zenova-pulse {
+  0%,
+  100% {
+    opacity: 0.4;
+    transform: scale(1);
+  }
+
+  50% {
+    opacity: 0.8;
+    transform: scale(1.08);
+  }
+}
+
+.zenova-pulse {
+  animation:
+    zenova-pulse
+    6s
+    ease-in-out
+    infinite;
+}
+
+@keyframes zenova-float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-14px);
+  }
+}
+
+.zenova-float {
+  animation:
+    zenova-float
+    6s
+    ease-in-out
+    infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+.zenova-marquee {
+  animation: zenova-marquee 30s linear infinite;
+}
+
+.zenova-marquee:hover {
+  animation-play-state: paused;
+}
+
+@keyframes zenova-marquee {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .zenova-marquee {
+    animation: none;
+  }
+}

@@ -3,7 +3,7 @@ export const projects = [
     id: 1,
     title: "Finance Dashboard",
     category: "Web Application",
-    image: "/projects/project-1.jpg",
+    image: "/projects/project-1.svg",
     description:
       "A modern analytics dashboard for fintech companies.",
     technologies: [
@@ -18,7 +18,7 @@ export const projects = [
     id: 2,
     title: "Creative Agency",
     category: "Corporate Website",
-    image: "/projects/project-2.jpg",
+    image: "/projects/project-2.svg",
     description:
       "Premium website for digital agencies.",
     technologies: [
@@ -32,7 +32,7 @@ export const projects = [
     id: 3,
     title: "Medical Platform",
     category: "Healthcare",
-    image: "/projects/project-3.jpg",
+    image: "/projects/project-3.svg",
     description:
       "Appointment and patient management system.",
     technologies: [
@@ -45,7 +45,7 @@ export const projects = [
     id: 4,
     title: "E-Commerce",
     category: "Online Store",
-    image: "/projects/project-4.jpg",
+    image: "/projects/project-4.svg",
     description:
       "Complete online shopping platform.",
     technologies: [

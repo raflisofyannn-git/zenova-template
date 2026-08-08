@@ -12,11 +12,11 @@ export const statistics = [
   {
     number: 99,
     suffix: "%",
-    title: "Customer Satisfaction",
+    title: "Client Satisfaction",
   },
   {
-    number: 24,
-    suffix: "/7",
-    title: "Support Available",
+    number: 12,
+    suffix: "K+",
+    title: "Active Users",
   },
 ];

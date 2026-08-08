@@ -1,17 +1,30 @@
 import FadeUp from "@/components/animation/FadeUp";
 import { projects } from "@/data/projects";
+
 import ProjectCard from "./ProjectCard";
 
 export default function ProjectGrid() {
   return (
-    <div className="mt-20 grid gap-8 lg:grid-cols-2">
+    <div
+      className="
+        mt-16
+        grid
+        grid-cols-1
+        items-stretch
+        gap-8
+        md:grid-cols-2
+        lg:gap-10
+      "
+    >
       {projects.map((project, index) => (
-        <FadeUp
-          key={project.title}
-          delay={index * 0.15}
+        <div
+          key={project.id}
+          className="min-w-0"
         >
-          <ProjectCard {...project} />
-        </FadeUp>
+          <FadeUp delay={index * 0.1}>
+            <ProjectCard {...project} />
+          </FadeUp>
+        </div>
       ))}
     </div>
   );

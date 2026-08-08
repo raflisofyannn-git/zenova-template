@@ -4,16 +4,25 @@ interface Props {
   rating: number;
 }
 
-export default function RatingStars({ rating }: Props) {
+export default function RatingStars({
+  rating,
+}: Props) {
   return (
-    <div className="flex gap-1">
-      {Array.from({ length: rating }).map((_, index) => (
-        <Star
-          key={index}
-          size={18}
-          className="fill-yellow-400 text-yellow-400"
-        />
-      ))}
+    <div className="flex items-center gap-1">
+      {Array.from({ length: 5 }).map(
+        (_, index) => (
+          <Star
+            key={index}
+            size={17}
+            strokeWidth={0}
+            fill={
+              index < rating
+                ? "#F59E0B"
+                : "#E5E7EB"
+            }
+          />
+        )
+      )}
     </div>
   );
 }
