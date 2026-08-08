@@ -1,47 +1,82 @@
 import {
-  Globe,
+  Code2,
+  LayoutDashboard,
   Palette,
   Smartphone,
-  Search,
-  BarChart3,
-  ShieldCheck,
+  ShoppingCart,
+  TrendingUp,
 } from "lucide-react";
 
 export const services = [
   {
-    icon: Globe,
     title: "Web Development",
     description:
-      "Modern websites built with Next.js, React and Tailwind CSS.",
+      "High-performance websites and web applications built with modern technologies.",
+    icon: Code2,
+    features: [
+      "Next.js & React",
+      "TypeScript",
+      "Scalable architecture",
+    ],
   },
+
   {
+    title: "UI/UX Design",
+    description:
+      "Beautiful and intuitive interfaces designed around your users and business goals.",
     icon: Palette,
-    title: "UI / UX Design",
-    description:
-      "Beautiful user interfaces crafted for premium digital products.",
+    features: [
+      "Modern visual systems",
+      "Responsive design",
+      "User-focused experience",
+    ],
   },
+
   {
+    title: "SaaS Development",
+    description:
+      "Scalable SaaS products with polished dashboards, workflows and business tools.",
+    icon: LayoutDashboard,
+    features: [
+      "Dashboard systems",
+      "Scalable components",
+      "Production ready",
+    ],
+  },
+
+  {
+    title: "Mobile Experience",
+    description:
+      "Responsive digital experiences that feel fast and natural across every device.",
     icon: Smartphone,
-    title: "Responsive Design",
-    description:
-      "Optimized layouts that look perfect across every device.",
+    features: [
+      "Mobile-first design",
+      "Responsive layouts",
+      "Touch optimized",
+    ],
   },
+
   {
-    icon: Search,
-    title: "SEO Optimization",
+    title: "E-Commerce",
     description:
-      "Technical SEO to improve visibility and search rankings.",
+      "Conversion-focused online stores designed to create smooth shopping experiences.",
+    icon: ShoppingCart,
+    features: [
+      "Product experiences",
+      "Checkout integration",
+      "Conversion focused",
+    ],
   },
+
   {
-    icon: BarChart3,
-    title: "Analytics",
+    title: "Digital Growth",
     description:
-      "Track user engagement and business performance with insights.",
-  },
-  {
-    icon: ShieldCheck,
-    title: "Maintenance",
-    description:
-      "Reliable updates, monitoring and long-term technical support.",
+      "Digital strategies and experiences designed to improve visibility, engagement and growth.",
+    icon: TrendingUp,
+    features: [
+      "Performance optimization",
+      "Analytics ready",
+      "Growth focused",
+    ],
   },
 ];

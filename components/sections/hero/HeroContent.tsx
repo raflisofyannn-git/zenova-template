@@ -5,9 +5,7 @@ import { ArrowRight, Play } from "lucide-react";
 export default function HeroContent() {
   return (
     <div>
-
       <FadeUp>
-
         <span
           className="
             inline-flex
@@ -20,27 +18,27 @@ export default function HeroContent() {
             py-2
             text-sm
             font-semibold
-            text-indigo-700
+            text-indigo-600
           "
         >
-          ✨ Next Generation Business Template
+          Welcome to Zenova
         </span>
-
       </FadeUp>
 
-      <FadeUp delay={0.2}>
-
+      <FadeUp delay={0.15}>
         <h1
           className="
-            mt-8
+            mt-7
             text-5xl
             font-black
             leading-[1.05]
-            tracking-tight
+            tracking-[-0.04em]
+            sm:text-6xl
             lg:text-7xl
           "
         >
           Build
+
           <br />
 
           <span
@@ -59,53 +57,51 @@ export default function HeroContent() {
           <br />
 
           That Shape
+
           <br />
 
-          The Future.
+          The Future
         </h1>
-
       </FadeUp>
 
-      <FadeUp delay={0.4}>
-
+      <FadeUp delay={0.3}>
         <p
           className="
-            mt-8
+            mt-7
             max-w-xl
-            text-lg
-            leading-8
+            text-base
+            leading-7
             text-muted-foreground
+            sm:text-lg
+            sm:leading-8
           "
         >
-          Zenova is a premium Next.js template designed for
-          startups, SaaS companies, agencies and modern
-          businesses that want to build beautiful digital
-          experiences with confidence.
+          Premium Next.js template crafted for
+          agencies, startups and enterprise
+          companies.
         </p>
-
       </FadeUp>
 
-      <FadeUp delay={0.6}>
-
-        <div className="mt-10 flex flex-wrap items-center gap-4">
+      <FadeUp delay={0.45}>
+        <div className="mt-9 flex flex-wrap gap-4">
 
           <Button
             size="lg"
             className="
-              h-14
+              h-13
               rounded-2xl
               bg-gradient-to-r
               from-indigo-600
               via-violet-600
               to-cyan-500
-              px-8
-              text-base
-              shadow-xl
+              px-7
+              font-semibold
+              shadow-lg
               shadow-indigo-500/20
               transition-all
               duration-300
-              hover:-translate-y-1
-              hover:shadow-indigo-500/40
+              hover:-translate-y-0.5
+              hover:opacity-90
             "
           >
             Get Started
@@ -114,69 +110,62 @@ export default function HeroContent() {
               size={18}
               className="ml-2"
             />
-
           </Button>
 
           <Button
             variant="outline"
             size="lg"
             className="
-              h-14
+              h-13
               rounded-2xl
-              px-8
+              border-border/70
+              bg-white/70
+              px-7
+              font-semibold
+              backdrop-blur-xl
+              transition-all
+              duration-300
+              hover:-translate-y-0.5
+              hover:border-indigo-300
+              hover:text-indigo-600
             "
           >
             <Play
               size={16}
-              className="mr-2"
+              className="mr-2 fill-current"
             />
 
             Live Demo
-
           </Button>
 
         </div>
-
       </FadeUp>
 
-      <FadeUp delay={0.8}>
+      <FadeUp delay={0.6}>
+        <div
+          className="
+            mt-10
+            flex
+            flex-wrap
+            items-center
+            gap-x-6
+            gap-y-3
+            text-sm
+            text-muted-foreground
+          "
+        >
+          <span className="flex items-center gap-2">
+            <span className="h-2 w-2 rounded-full bg-emerald-500" />
+            Production Ready
+          </span>
 
-        <div className="mt-14 flex flex-wrap items-center gap-10">
+          <span>Next.js</span>
 
-          <div>
-            <h3 className="text-3xl font-black text-indigo-600">
-              1.2K+
-            </h3>
+          <span>TypeScript</span>
 
-            <p className="text-sm text-muted-foreground">
-              Happy Clients
-            </p>
-          </div>
-
-          <div>
-            <h3 className="text-3xl font-black text-violet-600">
-              250+
-            </h3>
-
-            <p className="text-sm text-muted-foreground">
-              Projects
-            </p>
-          </div>
-
-          <div>
-            <h3 className="text-3xl font-black text-cyan-600">
-              99%
-            </h3>
-
-            <p className="text-sm text-muted-foreground">
-              Satisfaction
-            </p>
-          </div>
-
+          <span>Tailwind CSS</span>
         </div>
-
       </FadeUp>
-
     </div>
   );
 }

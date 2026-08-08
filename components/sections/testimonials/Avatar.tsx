@@ -18,22 +18,19 @@ export default function Avatar({
         shrink-0
         overflow-hidden
         rounded-full
-        bg-gradient-to-br
-        from-indigo-500
-        via-violet-500
-        to-cyan-500
-        p-[2px]
+        border-2
+        border-white
+        bg-indigo-50
+        shadow-md
       "
     >
-      <div className="relative h-full w-full overflow-hidden rounded-full bg-white">
-        <Image
-          src={src}
-          alt={alt}
-          fill
-          sizes="56px"
-          className="object-cover"
-        />
-      </div>
+      <Image
+        src={src}
+        alt={alt}
+        fill
+        sizes="56px"
+        className="object-cover"
+      />
     </div>
   );
 }

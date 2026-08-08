@@ -1,5 +1,3 @@
-import Counter from "@/components/animation/Counter";
-
 interface Props {
   number: number;
   suffix?: string;
@@ -16,19 +14,25 @@ export default function StatisticCard({
       className="
         group
         relative
+        flex
+        min-h-[210px]
+        flex-col
+        items-center
+        justify-center
         overflow-hidden
-        rounded-[32px]
+        rounded-[30px]
         border
         border-border/60
-        bg-white/80
+        bg-white
         p-8
         text-center
-        backdrop-blur-xl
+        shadow-sm
         transition-all
         duration-500
-        hover:-translate-y-3
-        hover:border-indigo-300
+        hover:-translate-y-2
+        hover:border-indigo-200
         hover:shadow-2xl
+        hover:shadow-indigo-500/10
       "
     >
       {/* Glow */}
@@ -38,13 +42,10 @@ export default function StatisticCard({
           absolute
           -right-16
           -top-16
-          h-40
-          w-40
+          h-36
+          w-36
           rounded-full
-          bg-gradient-to-br
-          from-indigo-500/20
-          via-violet-500/20
-          to-cyan-500/20
+          bg-indigo-500/10
           blur-3xl
           opacity-0
           transition-opacity
@@ -57,22 +58,25 @@ export default function StatisticCard({
       <div
         className="
           relative
-          bg-gradient-to-r
-          from-indigo-600
-          via-violet-600
-          to-cyan-500
-          bg-clip-text
           text-5xl
           font-black
           tracking-tight
-          text-transparent
-          lg:text-6xl
+          sm:text-6xl
         "
       >
-        <Counter
-          value={number}
-          suffix={suffix}
-        />
+        <span
+          className="
+            bg-gradient-to-r
+            from-indigo-600
+            via-violet-600
+            to-cyan-500
+            bg-clip-text
+            text-transparent
+          "
+        >
+          {number}
+          {suffix}
+        </span>
       </div>
 
       {/* Title */}
@@ -83,7 +87,6 @@ export default function StatisticCard({
           text-sm
           font-medium
           text-muted-foreground
-          lg:text-base
         "
       >
         {title}
@@ -92,11 +95,12 @@ export default function StatisticCard({
       {/* Accent */}
       <div
         className="
-          relative
-          mx-auto
-          mt-6
+          absolute
+          bottom-0
+          left-1/2
           h-1
           w-8
+          -translate-x-1/2
           rounded-full
           bg-gradient-to-r
           from-indigo-600

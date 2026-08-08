@@ -1,16 +1,18 @@
 import FadeUp from "@/components/animation/FadeUp";
-import ServiceCard from "./ServiceCard";
 import { services } from "@/data/services";
+import ServiceCard from "./ServiceCard";
 
 export default function ServiceGrid() {
   return (
     <div
       className="
-        mt-20
         grid
+        grid-cols-1
+        items-stretch
         gap-6
         md:grid-cols-2
-        xl:grid-cols-3
+        lg:grid-cols-3
+        lg:gap-8
       "
     >
       {services.map((service, index) => (
@@ -18,7 +20,11 @@ export default function ServiceGrid() {
           key={service.title}
           delay={index * 0.1}
         >
-          <ServiceCard {...service} />
+          <ServiceCard
+            title={service.title}
+            description={service.description}
+            icon={service.icon}
+          />
         </FadeUp>
       ))}
     </div>

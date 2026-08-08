@@ -3,38 +3,57 @@ import HeroImage from "./HeroImage";
 
 export default function Hero() {
   return (
-    <section className="relative overflow-hidden">
-
+    <section
+      id="home"
+      className="
+        relative
+        overflow-hidden
+        bg-background
+      "
+    >
       {/* Background */}
-      <div className="absolute inset-0 -z-30 bg-gradient-to-br from-white via-indigo-50/40 to-cyan-50/60" />
-
-      {/* Glow */}
       <div
         className="
+          pointer-events-none
+          absolute
+          inset-0
+          -z-30
+          bg-gradient-to-br
+          from-background
+          via-background
+          to-indigo-50/60
+        "
+      />
+
+      {/* Main Glow */}
+      <div
+        className="
+          pointer-events-none
           absolute
           left-1/2
           top-32
           -z-20
-          h-[700px]
-          w-[700px]
+          h-[500px]
+          w-[500px]
           -translate-x-1/2
           rounded-full
-          bg-indigo-500/20
-          blur-[180px]
+          bg-indigo-500/15
+          blur-[160px]
         "
       />
 
-      {/* Secondary Glow */}
+      {/* Cyan Glow */}
       <div
         className="
+          pointer-events-none
           absolute
+          bottom-0
           right-0
-          top-0
           -z-20
-          h-[500px]
-          w-[500px]
+          h-[350px]
+          w-[350px]
           rounded-full
-          bg-cyan-400/15
+          bg-cyan-500/10
           blur-[140px]
         "
       />
@@ -42,62 +61,61 @@ export default function Hero() {
       {/* Grid */}
       <div
         className="
+          pointer-events-none
           absolute
           inset-0
           -z-10
-          bg-[linear-gradient(to_right,#4F46E508_1px,transparent_1px),linear-gradient(to_bottom,#4F46E508_1px,transparent_1px)]
-          bg-[size:48px_48px]
-        "
-      />
-
-      {/* Blur Circle */}
-      <div
-        className="
-          absolute
-          bottom-10
-          left-10
-          -z-20
-          h-72
-          w-72
-          rounded-full
-          bg-violet-400/10
-          blur-[120px]
+          opacity-60
+          [background-image:linear-gradient(to_right,#4F46E508_1px,transparent_1px),linear-gradient(to_bottom,#4F46E508_1px,transparent_1px)]
+          [background-size:48px_48px]
         "
       />
 
       <div
-        className="
-          relative
+          className="
           mx-auto
           flex
-          min-h-[calc(100vh-80px)]
+          min-h-[680px]
           max-w-7xl
-          flex-col-reverse
+          flex-col
           items-center
           justify-center
-          gap-20
+          gap-16
           px-6
           py-20
+          sm:px-8
+          lg:min-h-[680px]
           lg:flex-row
           lg:justify-between
-          lg:gap-28
+          lg:gap-10
+          lg:px-10
         "
       >
-
-        {/* Left */}
-
-        <div className="w-full lg:max-w-[560px]">
+        {/* Content */}
+        <div
+          className="
+            w-full
+            max-w-2xl
+            lg:max-w-[540px]
+          "
+        >
           <HeroContent />
         </div>
 
-        {/* Right */}
-
-        <div className="flex w-full justify-center lg:justify-end">
+        {/* Dashboard */}
+        <div
+          className="
+            flex
+            w-full
+            max-w-[650px]
+            justify-center
+            lg:max-w-[620px]
+            lg:justify-end
+          "
+        >
           <HeroImage />
         </div>
-
       </div>
-
     </section>
   );
 }

@@ -8,12 +8,13 @@ export default function SectionTitle({
   return (
     <h2
       className="
-        mt-8
-        max-w-3xl
+        mt-5
         text-4xl
-        font-bold
+        font-black
         leading-tight
-        lg:text-5xl
+        tracking-tight
+        sm:text-5xl
+        lg:text-6xl
       "
     >
       {children}

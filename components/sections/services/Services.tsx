@@ -14,64 +14,68 @@ export default function Services() {
       className="
         relative
         overflow-hidden
-        py-20
+        py-24
         lg:py-32
       "
     >
       {/* Background */}
       <div
         className="
+          pointer-events-none
           absolute
           inset-0
           -z-20
           bg-gradient-to-b
           from-background
-          via-indigo-50/20
-          to-cyan-50/30
+          via-cyan-50/20
+          to-background
         "
       />
 
       {/* Glow */}
       <div
         className="
+          pointer-events-none
           absolute
-          left-0
+          right-[-120px]
           top-20
           -z-10
           h-[500px]
           w-[500px]
           rounded-full
-          bg-indigo-500/10
+          bg-cyan-500/10
           blur-[180px]
         "
       />
 
       <div
         className="
+          pointer-events-none
           absolute
-          bottom-0
-          right-0
+          left-[-150px]
+          bottom-20
           -z-10
-          h-[450px]
-          w-[450px]
+          h-[400px]
+          w-[400px]
           rounded-full
-          bg-cyan-500/10
+          bg-indigo-500/10
           blur-[160px]
         "
       />
 
       <SectionContainer>
 
+        {/* Heading */}
         <div className="mx-auto max-w-3xl text-center">
 
           <FadeUp>
 
             <SectionBadge>
-              Our Services
+              What We Do
             </SectionBadge>
 
             <SectionTitle>
-              Everything You Need to
+              Everything Your
               <span
                 className="
                   block
@@ -83,21 +87,24 @@ export default function Services() {
                   text-transparent
                 "
               >
-                Build & Grow
+                Business Needs
               </span>
             </SectionTitle>
 
             <SectionDescription>
-              Powerful digital solutions designed
-              to help modern businesses move faster,
-              work smarter and grow with confidence.
+              Flexible digital solutions designed to help
+              modern businesses launch, grow and scale
+              with confidence.
             </SectionDescription>
 
           </FadeUp>
 
         </div>
 
-        <ServiceGrid />
+        {/* Services */}
+        <div className="mt-16">
+          <ServiceGrid />
+        </div>
 
       </SectionContainer>
     </section>

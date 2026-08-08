@@ -7,180 +7,124 @@ export default function HeroImage() {
       className="
         relative
         flex
+        min-h-[540px]
         w-full
         items-center
         justify-center
-        py-10
-        lg:justify-end
+        lg:min-h-[560px]
       "
     >
-      {/* Background Glow */}
-      <div
-        className="
-          absolute
-          h-[520px]
-          w-[520px]
-          rounded-full
-          bg-gradient-to-br
-          from-indigo-500/20
-          via-violet-500/20
-          to-cyan-500/20
-          blur-[120px]
-        "
-      />
-
       {/* Dashboard */}
       <FadeLeft>
         <div
           className="
             relative
-            z-10
-            scale-[0.72]
-            sm:scale-[0.82]
-            lg:scale-[0.90]
-            xl:scale-100
+            origin-center
+            -translate-y-4
+            scale-[0.64]
+            sm:scale-[0.72]
+            lg:scale-[0.74]
+            xl:scale-[0.82]
           "
         >
           <DashboardMockup />
         </div>
       </FadeLeft>
 
-      {/* Revenue */}
-      <div
-        className="
-          absolute
-          left-0
-          bottom-10
-          z-20
-          hidden
-          rounded-[28px]
-          border
-          border-white/40
-          bg-white/85
-          p-6
-          shadow-2xl
-          backdrop-blur-xl
-          lg:block
-        "
-      >
-        <p className="text-sm text-muted-foreground">
-          Revenue
-        </p>
-
-        <h3
-          className="
-            mt-2
-            bg-gradient-to-r
-            from-indigo-600
-            via-violet-600
-            to-cyan-500
-            bg-clip-text
-            text-4xl
-            font-black
-            text-transparent
-          "
-        >
-          $245K
-        </h3>
-
-        <div className="mt-3 flex items-center gap-2">
-
-          <span
-            className="
-              rounded-full
-              bg-emerald-100
-              px-3
-              py-1
-              text-xs
-              font-semibold
-              text-emerald-700
-            "
-          >
-            ▲ +18.2%
-          </span>
-
-          <span className="text-xs text-muted-foreground">
-            this month
-          </span>
-
-        </div>
-      </div>
-
       {/* Projects */}
       <div
         className="
           absolute
           right-0
-          top-10
-          z-20
-          hidden
-          rounded-[28px]
+          top-6
+          z-30
+          w-[118px]
+          rounded-[24px]
           border
-          border-white/40
-          bg-white/85
-          p-6
-          shadow-2xl
+          border-border/60
+          bg-white/95
+          p-4
+          shadow-xl
           backdrop-blur-xl
-          lg:block
+          sm:right-2
+          lg:right-0
         "
       >
-        <p className="text-sm text-muted-foreground">
-          Active Projects
+        <p className="text-xs text-muted-foreground">
+          Projects
         </p>
 
-        <h3
-          className="
-            mt-2
-            bg-gradient-to-r
-            from-indigo-600
-            via-violet-600
-            to-cyan-500
-            bg-clip-text
-            text-4xl
-            font-black
-            text-transparent
-          "
-        >
+        <h3 className="mt-1 text-2xl font-bold tracking-tight">
           250+
         </h3>
 
-        <p className="mt-3 text-sm font-semibold text-cyan-600">
-          Running
+        <p className="mt-1 text-xs font-semibold text-indigo-600">
+          Active
         </p>
       </div>
 
-      {/* Floating Badge */}
+      {/* Conversion */}
       <div
         className="
           absolute
-          bottom-0
-          right-20
-          hidden
-          rounded-full
+          right-1
+          top-40
+          z-30
+          w-[118px]
+          rounded-[24px]
           border
-          border-white/40
-          bg-white/90
-          px-6
-          py-3
+          border-border/60
+          bg-white/95
+          p-4
           shadow-xl
           backdrop-blur-xl
-          xl:flex
-          items-center
-          gap-3
+          sm:right-2
+          lg:right-1
         "
       >
-        <div
-          className="
-            h-3
-            w-3
-            rounded-full
-            bg-emerald-500
-          "
-        />
+        <p className="text-xs text-muted-foreground">
+          Conversion
+        </p>
 
-        <span className="text-sm font-medium">
-          System Online
-        </span>
+        <h3 className="mt-1 text-2xl font-bold tracking-tight">
+          18.4%
+        </h3>
+
+        <p className="mt-1 text-xs font-semibold text-emerald-600">
+          ▲ +3.8%
+        </p>
+      </div>
+
+      {/* Revenue */}
+      <div
+        className="
+          absolute
+          bottom-20
+          left-0
+          z-30
+          w-[120px]
+          rounded-[24px]
+          border
+          border-border/60
+          bg-white/95
+          p-4
+          shadow-xl
+          backdrop-blur-xl
+          sm:left-2
+          lg:left-0
+        "
+      >
+        <p className="text-xs text-muted-foreground">
+          Revenue
+        </p>
+
+        <h3 className="mt-1 text-2xl font-bold tracking-tight">
+          $120K
+        </h3>
+
+        <p className="mt-1 text-xs font-semibold text-emerald-600">
+          ▲ +18.2%
+        </p>
       </div>
     </div>
   );

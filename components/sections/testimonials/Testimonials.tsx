@@ -14,40 +14,43 @@ export default function Testimonials() {
       className="
         relative
         overflow-hidden
-        py-20
+        py-24
         lg:py-32
       "
     >
       {/* Background */}
       <div
         className="
+          pointer-events-none
           absolute
           inset-0
           -z-20
           bg-gradient-to-b
           from-background
           via-indigo-50/20
-          to-cyan-50/30
+          to-background
         "
       />
 
       {/* Glow */}
       <div
         className="
+          pointer-events-none
           absolute
-          left-1/2
-          top-40
+          left-[-120px]
+          top-20
           -z-10
-          h-[500px]
-          w-[500px]
-          -translate-x-1/2
+          h-[450px]
+          w-[450px]
           rounded-full
-          bg-violet-500/10
-          blur-[180px]
+          bg-indigo-500/10
+          blur-[170px]
         "
       />
 
       <SectionContainer>
+
+        {/* Heading */}
         <div className="mx-auto max-w-3xl text-center">
 
           <FadeUp>
@@ -57,7 +60,7 @@ export default function Testimonials() {
             </SectionBadge>
 
             <SectionTitle>
-              Trusted by Businesses
+              Loved by
               <span
                 className="
                   block
@@ -69,21 +72,23 @@ export default function Testimonials() {
                   text-transparent
                 "
               >
-                Worldwide
+                Modern Businesses
               </span>
             </SectionTitle>
 
             <SectionDescription>
-              Hear what our clients say about
-              building their digital products
-              with Zenova.
+              See what businesses and teams say about
+              their experience working with Zenova.
             </SectionDescription>
 
           </FadeUp>
 
         </div>
 
-        <TestimonialCarousel />
+        {/* Testimonials */}
+        <div className="mt-16">
+          <TestimonialCarousel />
+        </div>
 
       </SectionContainer>
     </section>
