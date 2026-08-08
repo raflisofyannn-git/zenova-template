@@ -1,10 +1,13 @@
 import BrowserHeader from "./BrowserHeader";
 import Sidebar from "./Sidebar";
+
 import StatsGrid from "./widgets/StatsGrid";
+import ActivityList from "./widgets/ActivityList";
+import TeamMembers from "./widgets/TeamMembers";
+
 import RevenueChart from "./charts/RevenueChart";
-import ActivityList from "./ActivityList";
+
 import ProgressCard from "./cards/ProgressCard";
-import TeamMembers from "./TeamMembers";
 import NotificationCard from "./cards/NotificationCard";
 
 export default function DashboardMockup() {
