@@ -2,8 +2,8 @@ import SectionBadge from "@/components/common/SectionBadge";
 import SectionContainer from "@/components/common/SectionContainer";
 import SectionDescription from "@/components/common/SectionDescription";
 import SectionTitle from "@/components/common/SectionTitle";
-
 import TestimonialCarousel from "./TestimonialCarousel";
+
 
 export default function Testimonials() {
   return (

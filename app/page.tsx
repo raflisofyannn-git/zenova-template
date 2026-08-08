@@ -7,7 +7,7 @@ import Showcase from "@/components/sections/showcase/Showcase";
 import Statistics from "@/components/sections/statistics/Statistics";
 import About from "@/components/sections/about/About";
 import Services from "@/components/sections/services/Services";
-import Services from "@/components/sections/testimonials/Testimonials";
+import Testimonials from "@/components/sections/testimonials/Testimonials";
 
 export default function Home() {
   return (
