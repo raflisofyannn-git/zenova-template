@@ -1,4 +1,4 @@
-import BrowserHeader from "./BrowserHeader";
+﻿import BrowserHeader from "./BrowserHeader";
 import Sidebar from "./Sidebar";
 
 import StatsGrid from "./widgets/StatsGrid";

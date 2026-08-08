@@ -1,14 +1,14 @@
-export const siteConfig = {
-  name: "Aureon",
+﻿export const siteConfig = {
+  name: "ZENOVA",
 
   description:
     "Premium Business & Corporate Template",
 
-  url: "https://aureon.com",
+  url: "https://ZENOVA.com",
 
   logo: "/logo/logo.svg",
 
-  email: "hello@aureon.com",
+  email: "hello@ZENOVA.com",
 
   phone: "+62 81234567890",
 

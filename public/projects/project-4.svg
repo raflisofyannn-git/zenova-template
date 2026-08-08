@@ -1,31 +1,10 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="750" viewBox="0 0 1200 750">
-  <rect width="1200" height="750" rx="32" fill="#f5f7fb"/>
-  <rect x="70" y="70" width="1060" height="610" rx="30" fill="#ffffff"/>
-
-  <!-- Dark navigation bar -->
-  <rect x="70" y="70" width="1060" height="90" rx="30" fill="#111827"/>
-  <rect x="110" y="102" width="170" height="28" rx="14" fill="#4b46e8"/>
-  <rect x="800" y="102" width="80" height="28" rx="14" fill="#374151"/>
-  <rect x="900" y="102" width="80" height="28" rx="14" fill="#374151"/>
-  <rect x="1000" y="102" width="80" height="28" rx="14" fill="#374151"/>
-
-  <!-- Cards -->
-  <rect x="110" y="210" width="300" height="350" rx="24" fill="#eef2ff"/>
-  <rect x="450" y="210" width="300" height="350" rx="24" fill="#f4f1ff"/>
-  <rect x="790" y="210" width="300" height="350" rx="24" fill="#edfcfd"/>
-
-  <!-- Card circles -->
-  <circle cx="260" cy="330" r="82" fill="#c6d0fa"/>
-  <circle cx="600" cy="330" r="82" fill="#d9d0fa"/>
-  <circle cx="940" cy="330" r="82" fill="#c9f4f8"/>
-
-  <!-- Card text -->
-  <rect x="170" y="455" width="180" height="18" rx="9" fill="#c8d3df"/>
-  <rect x="510" y="455" width="180" height="18" rx="9" fill="#c8d3df"/>
-  <rect x="850" y="455" width="180" height="18" rx="9" fill="#c8d3df"/>
-
-  <!-- Card buttons -->
-  <rect x="170" y="500" width="110" height="35" rx="18" fill="#4b46e8"/>
-  <rect x="510" y="500" width="110" height="35" rx="18" fill="#8955ed"/>
-  <rect x="850" y="500" width="110" height="35" rx="18" fill="#10b2cf"/>
-</svg>
+<svg width="1600" height="1000" viewBox="0 0 1600 1000" xmlns="http://www.w3.org/2000/svg">
+<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#F5F3FF"/><stop offset="1" stop-color="#CFFAFE"/></linearGradient><linearGradient id="accent" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#7C3AED"/><stop offset="1" stop-color="#06B6D4"/></linearGradient></defs>
+<rect width="1600" height="1000" rx="48" fill="url(#bg)"/><text x="120" y="150" font-family="Arial" font-size="28" font-weight="bold" fill="#4F46E5">ZENOVA STORE</text>
+<text x="120" y="260" font-family="Arial" font-size="64" font-weight="bold" fill="#0F172A">Modern Shopping</text><text x="120" y="330" font-family="Arial" font-size="64" font-weight="bold" fill="#0F172A">Experience</text>
+<rect x="120" y="400" width="210" height="62" rx="31" fill="url(#accent)"/><text x="170" y="440" font-family="Arial" font-size="20" font-weight="bold" fill="white">Shop Now</text>
+<rect x="700" y="130" width="300" height="370" rx="28" fill="white"/><rect x="1030" y="130" width="300" height="370" rx="28" fill="white"/>
+<rect x="730" y="160" width="240" height="230" rx="20" fill="#EEF2FF"/><circle cx="850" cy="275" r="75" fill="#C4B5FD"/>
+<rect x="1060" y="160" width="240" height="230" rx="20" fill="#ECFEFF"/><circle cx="1180" cy="275" r="75" fill="#67E8F9"/>
+<text x="730" y="435" font-family="Arial" font-size="22" font-weight="bold" fill="#0F172A">Premium Product</text><text x="1060" y="435" font-family="Arial" font-size="22" font-weight="bold" fill="#0F172A">New Collection</text>
+<rect x="700" y="570" width="630" height="180" rx="28" fill="white" opacity=".9"/><text x="750" y="635" font-family="Arial" font-size="24" fill="#64748B">Total Sales</text><text x="750" y="700" font-family="Arial" font-size="52" font-weight="bold" fill="#4F46E5">$128,450</text></svg>

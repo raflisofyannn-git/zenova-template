@@ -1,4 +1,4 @@
-export const navigation = [
+﻿export const navigation = [
   {
     title: "Home",
     href: "#home",

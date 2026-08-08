@@ -1,4 +1,4 @@
-import Link from "next/link";
+﻿import Link from "next/link";
 import Logo from "@/components/layout/Logo";
 
 const product = [
@@ -33,7 +33,7 @@ export default function FooterLinks() {
         <Logo />
 
         <p className="mt-6 leading-8 text-slate-400">
-          Aureon is a modern Next.js template crafted
+          ZENOVA is a modern Next.js template crafted
           for startups, agencies, and growing businesses.
         </p>
 

@@ -1,4 +1,4 @@
-import FadeUp from "@/components/animation/FadeUp";
+﻿import FadeUp from "@/components/animation/FadeUp";
 import FeatureList from "./FeatureList";
 import { aboutFeatures } from "@/data/about";
 import { Button } from "@/components/ui/button";
@@ -25,7 +25,7 @@ export default function AboutContent() {
             text-primary
           "
         >
-          About Aureon
+          About ZENOVA
         </span>
       </FadeUp>
 
@@ -43,7 +43,7 @@ export default function AboutContent() {
       {/* Description */}
       <FadeUp delay={0.2}>
         <p className="mt-8 text-lg leading-8 text-muted-foreground">
-          Aureon helps businesses build premium websites,
+          ZENOVA helps businesses build premium websites,
           scalable products, and unforgettable digital
           experiences powered by modern technologies.
         </p>

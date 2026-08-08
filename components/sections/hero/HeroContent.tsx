@@ -1,4 +1,4 @@
-import FadeUp from "@/components/animation/FadeUp";
+﻿import FadeUp from "@/components/animation/FadeUp";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Play } from "lucide-react";
 

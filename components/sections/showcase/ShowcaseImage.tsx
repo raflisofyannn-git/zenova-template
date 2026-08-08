@@ -1,4 +1,4 @@
-import DashboardMockup from "@/components/dashboard/DashboardMockup";
+﻿import DashboardMockup from "@/components/dashboard/DashboardMockup";
 
 export default function ShowcaseImage() {
   return (

@@ -1,4 +1,4 @@
-import FadeUp from "@/components/animation/FadeUp";
+﻿import FadeUp from "@/components/animation/FadeUp";
 
 import SectionBadge from "@/components/common/SectionBadge";
 import SectionContainer from "@/components/common/SectionContainer";
@@ -14,24 +14,26 @@ export default function Pricing() {
       className="
         relative
         overflow-hidden
-        py-20
+        py-24
         lg:py-32
       "
     >
       <div
         className="
+          pointer-events-none
           absolute
           inset-0
           -z-20
           bg-gradient-to-b
           from-background
-          via-indigo-50/20
-          to-cyan-50/30
+          via-violet-50/20
+          to-background
         "
       />
 
       <div
         className="
+          pointer-events-none
           absolute
           left-1/2
           top-20
@@ -40,23 +42,20 @@ export default function Pricing() {
           w-[500px]
           -translate-x-1/2
           rounded-full
-          bg-indigo-500/10
+          bg-violet-500/10
           blur-[180px]
         "
       />
 
       <SectionContainer>
-
         <div className="mx-auto max-w-3xl text-center">
-
           <FadeUp>
-
             <SectionBadge>
-              Pricing
+              Simple Pricing
             </SectionBadge>
 
             <SectionTitle>
-              Simple Pricing.
+              Choose the Right
               <span
                 className="
                   block
@@ -68,21 +67,18 @@ export default function Pricing() {
                   text-transparent
                 "
               >
-                Powerful Results.
+                Plan for You
               </span>
             </SectionTitle>
 
             <SectionDescription>
-              Choose the plan that fits your business
-              and start building with Zenova today.
+              Flexible plans designed for startups,
+              growing businesses and ambitious teams.
             </SectionDescription>
-
           </FadeUp>
-
         </div>
 
         <PricingGrid />
-
       </SectionContainer>
     </section>
   );

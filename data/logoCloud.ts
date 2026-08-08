@@ -1,4 +1,4 @@
-export const logoCloud = [
+﻿export const logoCloud = [
   {
     name: "Google",
     logo: "/logos/google.svg",

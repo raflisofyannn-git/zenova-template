@@ -1,42 +1,12 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="750" viewBox="0 0 1200 750">
-  <rect width="1200" height="750" rx="32" fill="#eef2ff"/>
-
-  <rect x="70" y="70" width="1060" height="610" rx="30" fill="#ffffff"/>
-  <rect x="70" y="70" width="1060" height="72" rx="30" fill="#f7f9fc"/>
-
-  <circle cx="110" cy="106" r="9" fill="#4b46e8"/>
-  <circle cx="140" cy="106" r="9" fill="#8555ed"/>
-  <circle cx="170" cy="106" r="9" fill="#12afd0"/>
-
-  <rect x="110" y="180" width="230" height="120" rx="20" fill="#eef2ff"/>
-  <rect x="370" y="180" width="230" height="120" rx="20" fill="#f3f0ff"/>
-  <rect x="630" y="180" width="230" height="120" rx="20" fill="#eafcff"/>
-  <rect x="890" y="180" width="190" height="120" rx="20" fill="#f7f9fb"/>
-
-  <rect x="110" y="336" width="650" height="269" rx="20" fill="#f7f9fc"/>
-  <rect x="790" y="336" width="290" height="269" rx="20" fill="#f7f9fc"/>
-
-  <!-- Main chart -->
-  <path d="M148 539
-           C198 502 250 505 300 466
-           C350 427 335 409 390 420
-           C445 431 464 454 507 430
-           C548 407 555 390 608 391
-           C652 391 678 400 701 385"
-        fill="none" stroke="#4b46e8" stroke-width="9" stroke-linecap="round"/>
-
-  <path d="M148 565
-           C205 549 253 551 304 529
-           C356 507 376 481 420 491
-           C470 502 501 510 541 493
-           C584 475 596 461 640 457
-           C670 454 696 455 711 440"
-        fill="none" stroke="#12afd0" stroke-width="7" stroke-linecap="round"/>
-
-  <!-- Donut chart -->
-  <circle cx="934" cy="470" r="70" fill="none"
-          stroke="#4b46e8" stroke-width="24"
-          stroke-dasharray="330 110"
-          transform="rotate(-70 934 470)"/>
-  <circle cx="934" cy="470" r="51" fill="#ffffff"/>
-</svg>
+<svg width="1600" height="1000" viewBox="0 0 1600 1000" xmlns="http://www.w3.org/2000/svg">
+<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#EEF2FF"/><stop offset="1" stop-color="#CFFAFE"/></linearGradient><linearGradient id="accent" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#4F46E5"/><stop offset=".5" stop-color="#8B5CF6"/><stop offset="1" stop-color="#06B6D4"/></linearGradient></defs>
+<rect width="1600" height="1000" rx="48" fill="url(#bg)"/><rect x="120" y="100" width="1360" height="800" rx="32" fill="white" opacity=".95"/><rect x="120" y="100" width="300" height="800" rx="32" fill="#F8FAFC"/>
+<circle cx="205" cy="185" r="32" fill="url(#accent)"/><text x="194" y="197" font-family="Arial" font-size="30" font-weight="bold" fill="white">Z</text>
+<rect x="170" y="270" width="200" height="55" rx="18" fill="url(#accent)"/><text x="215" y="305" font-family="Arial" font-size="22" fill="white">Dashboard</text>
+<text x="190" y="380" font-family="Arial" font-size="20" fill="#64748B">Analytics</text><text x="190" y="440" font-family="Arial" font-size="20" fill="#64748B">Projects</text><text x="190" y="500" font-family="Arial" font-size="20" fill="#64748B">Customers</text>
+<text x="480" y="180" font-family="Arial" font-size="30" font-weight="bold" fill="#0F172A">Finance Dashboard</text>
+<rect x="480" y="230" width="280" height="150" rx="24" fill="#F8FAFC"/><text x="510" y="275" font-family="Arial" font-size="18" fill="#64748B">Revenue</text><text x="510" y="330" font-family="Arial" font-size="42" font-weight="bold" fill="#4F46E5">$245K</text>
+<rect x="790" y="230" width="280" height="150" rx="24" fill="#F8FAFC"/><text x="820" y="275" font-family="Arial" font-size="18" fill="#64748B">Customers</text><text x="820" y="330" font-family="Arial" font-size="42" font-weight="bold" fill="#8B5CF6">8.4K</text>
+<rect x="1100" y="230" width="280" height="150" rx="24" fill="#F8FAFC"/><text x="1130" y="275" font-family="Arial" font-size="18" fill="#64748B">Growth</text><text x="1130" y="330" font-family="Arial" font-size="42" font-weight="bold" fill="#06B6D4">18.4%</text>
+<rect x="480" y="430" width="900" height="350" rx="28" fill="#F8FAFC"/><text x="520" y="485" font-family="Arial" font-size="22" fill="#64748B">Revenue Overview</text>
+<polyline points="520,690 620,640 720,660 820,570 920,610 1020,520 1120,550 1220,450 1320,500" fill="none" stroke="url(#accent)" stroke-width="10"/><line x1="520" y1="700" x2="1340" y2="700" stroke="#CBD5E1"/></svg>

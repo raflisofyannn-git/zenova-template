@@ -1,27 +1,32 @@
-export const faq = [
+﻿export const faq = [
   {
-    question: "Can I use Zenova for commercial projects?",
+    question: "What is Zenova?",
     answer:
-      "Yes. Zenova is designed for both personal and commercial projects. You can customize the components, content and branding to match your business.",
+      "Zenova is a premium Next.js template designed for startups, SaaS companies, agencies and modern businesses that need a polished digital presence.",
   },
   {
-    question: "Is Zenova easy to customize?",
+    question: "Is Zenova built with Next.js?",
     answer:
-      "Yes. The template uses reusable React components, TypeScript and Tailwind CSS, making it easy to change colors, typography, layouts and sections.",
+      "Yes. Zenova is built with Next.js, React, TypeScript and Tailwind CSS, making it easy to customize and extend.",
   },
   {
-    question: "Does Zenova work on mobile devices?",
+    question: "Can I customize the design?",
     answer:
-      "Yes. Every major section is designed with responsive layouts for mobile, tablet and desktop screens.",
+      "Absolutely. Colors, typography, sections, components and layouts are structured to be easily customized for your brand.",
   },
   {
-    question: "What technologies are included?",
+    question: "Is the template responsive?",
     answer:
-      "Zenova is built with Next.js, React, TypeScript, Tailwind CSS, shadcn/ui, Lucide icons and Framer Motion.",
+      "Yes. The entire interface is designed to work across desktop, tablet and mobile screen sizes.",
   },
   {
-    question: "Can I create multiple websites with Zenova?",
+    question: "Can I use Zenova for client projects?",
     answer:
-      "Yes. The component-based architecture allows you to reuse the system for different websites, brands and industries.",
+      "Yes, provided your license permits the intended use. You can customize the template to create websites for your own business or clients.",
+  },
+  {
+    question: "Is TypeScript included?",
+    answer:
+      "Yes. The project uses TypeScript throughout the main components and data structures for better maintainability and developer experience.",
   },
 ];

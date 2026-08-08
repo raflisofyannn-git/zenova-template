@@ -1,4 +1,4 @@
-import FadeLeft from "@/components/animation/FadeLeft";
+﻿import FadeLeft from "@/components/animation/FadeLeft";
 import AboutDashboard from "./AboutDashboard";
 
 export default function AboutImage() {

@@ -1,4 +1,4 @@
-import SocialIcons from "./SocialIcons";
+﻿import SocialIcons from "./SocialIcons";
 
 export default function FooterBottom() {
   return (
@@ -19,7 +19,7 @@ export default function FooterBottom() {
       "
     >
       <p className="text-sm text-slate-500">
-        © 2026 Zenova. All rights reserved.
+        Â© 2026 Zenova. All rights reserved.
       </p>
 
       <SocialIcons />

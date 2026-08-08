@@ -1,4 +1,4 @@
-export const showcase = {
+﻿export const showcase = {
   badge: "Dashboard Preview",
 
   title: "Powerful Analytics Dashboard",

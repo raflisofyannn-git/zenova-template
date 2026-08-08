@@ -1,11 +1,12 @@
-import FadeUp from "@/components/animation/FadeUp";
-
+﻿import FadeUp from "@/components/animation/FadeUp";
 import SectionBadge from "@/components/common/SectionBadge";
 import SectionContainer from "@/components/common/SectionContainer";
 import SectionDescription from "@/components/common/SectionDescription";
 import SectionTitle from "@/components/common/SectionTitle";
 
-import FAQAccordion from "./FAQAccordion";
+import FAQItem from "./FAQItem";
+
+import { faq } from "@/data/faq";
 
 export default function FAQ() {
   return (
@@ -14,49 +15,50 @@ export default function FAQ() {
       className="
         relative
         overflow-hidden
-        py-20
+        py-24
         lg:py-32
       "
     >
       {/* Background */}
       <div
         className="
+          pointer-events-none
           absolute
           inset-0
           -z-20
           bg-gradient-to-b
           from-background
           via-indigo-50/20
-          to-cyan-50/30
+          to-background
         "
       />
 
       {/* Glow */}
       <div
         className="
+          pointer-events-none
           absolute
-          right-0
+          right-[-150px]
           top-20
           -z-10
-          h-[450px]
-          w-[450px]
+          h-[500px]
+          w-[500px]
           rounded-full
           bg-cyan-500/10
-          blur-[160px]
+          blur-[180px]
         "
       />
 
       <SectionContainer>
+        {/* Heading */}
         <div className="mx-auto max-w-3xl text-center">
-
           <FadeUp>
-
             <SectionBadge>
-              FAQ
+              Frequently Asked Questions
             </SectionBadge>
 
             <SectionTitle>
-              Frequently Asked
+              Everything You Need
               <span
                 className="
                   block
@@ -68,22 +70,38 @@ export default function FAQ() {
                   text-transparent
                 "
               >
-                Questions
+                to Know
               </span>
             </SectionTitle>
 
             <SectionDescription>
-              Everything you need to know about
-              Zenova and how it can help your
-              business grow.
+              Answers to the most common questions about
+              Zenova and our digital solutions.
             </SectionDescription>
-
           </FadeUp>
-
         </div>
 
-        <FAQAccordion />
-
+        {/* FAQ */}
+        <div
+          className="
+            mx-auto
+            mt-16
+            max-w-4xl
+            space-y-4
+          "
+        >
+          {faq.map((item, index) => (
+            <FadeUp
+              key={item.question}
+              delay={index * 0.08}
+            >
+              <FAQItem
+                question={item.question}
+                answer={item.answer}
+              />
+            </FadeUp>
+          ))}
+        </div>
       </SectionContainer>
     </section>
   );

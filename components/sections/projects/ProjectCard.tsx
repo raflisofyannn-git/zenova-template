@@ -1,4 +1,4 @@
-import Image from "next/image";
+﻿import Image from "next/image";
 import { ArrowUpRight } from "lucide-react";
 
 import TechBadge from "./TechBadge";

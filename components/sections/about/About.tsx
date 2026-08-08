@@ -1,4 +1,4 @@
-import FadeUp from "@/components/animation/FadeUp";
+﻿import FadeUp from "@/components/animation/FadeUp";
 import FadeLeft from "@/components/animation/FadeLeft";
 
 import SectionBadge from "@/components/common/SectionBadge";

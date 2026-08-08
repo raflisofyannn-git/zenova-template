@@ -1,4 +1,4 @@
-import { Button } from "@/components/ui/button";
+﻿import { Button } from "@/components/ui/button";
 import FadeUp from "@/components/animation/FadeUp";
 
 export default function FooterCTA() {
@@ -40,7 +40,7 @@ export default function FooterCTA() {
         <FadeUp delay={0.15}>
 
           <p className="mx-auto mt-8 max-w-2xl text-lg leading-8 text-white/80">
-            Build beautiful, modern websites faster using Aureon.
+            Build beautiful, modern websites faster using ZENOVA.
           </p>
 
         </FadeUp>

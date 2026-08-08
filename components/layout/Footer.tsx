@@ -1,199 +1,306 @@
-import Logo from "./Logo";
-import FooterBottom from "./FooterBottom";
+﻿import Link from "next/link";
+import {
+  ArrowUpRight,
+  Globe,
+  Mail,
+  MapPin,
+  Phone,
+} from "lucide-react";
 
-const companyLinks = [
-  { label: "About", href: "#about" },
-  { label: "Services", href: "#services" },
-  { label: "Projects", href: "#projects" },
-  { label: "Contact", href: "#contact" },
+const navigation = [
+  { name: "Home", href: "#home" },
+  { name: "About", href: "#about" },
+  { name: "Services", href: "#services" },
+  { name: "Projects", href: "#projects" },
+  { name: "Contact", href: "#contact" },
 ];
 
-const resourceLinks = [
-  { label: "Pricing", href: "#pricing" },
-  { label: "Testimonials", href: "#testimonials" },
-  { label: "FAQ", href: "#faq" },
+const resources = [
+  { name: "Features", href: "#features" },
+  { name: "Pricing", href: "#pricing" },
+  { name: "FAQ", href: "#faq" },
+  { name: "Testimonials", href: "#testimonials" },
 ];
 
 export default function Footer() {
   return (
-    <footer
-      className="
-        relative
-        overflow-hidden
-        border-t
-        border-border/50
-        bg-slate-950
-        text-white
-      "
-    >
+    <footer className="relative overflow-hidden border-t border-border/60 bg-slate-950 text-white">
       {/* Glow */}
       <div
         className="
+          pointer-events-none
           absolute
           -left-32
-          -top-32
-          h-96
-          w-96
+          top-0
+          h-80
+          w-80
           rounded-full
           bg-indigo-600/20
-          blur-[140px]
+          blur-[130px]
         "
       />
 
       <div
         className="
+          pointer-events-none
           absolute
-          -bottom-40
           -right-32
-          h-[500px]
-          w-[500px]
+          bottom-0
+          h-80
+          w-80
           rounded-full
           bg-cyan-500/10
-          blur-[160px]
+          blur-[130px]
         "
       />
 
-      <div
-        className="
-          relative
-          mx-auto
-          max-w-7xl
-          px-6
-          py-20
-          lg:px-8
-        "
-      >
-        <div
-          className="
-            grid
-            gap-12
-            sm:grid-cols-2
-            lg:grid-cols-[1.5fr_1fr_1fr_1.3fr]
-          "
-        >
+      <div className="relative mx-auto max-w-7xl px-6 py-16 lg:px-8 lg:py-20">
+        <div className="grid gap-12 lg:grid-cols-[1.5fr_1fr_1fr_1fr]">
           {/* Brand */}
-          <div>
-            <Logo />
-
-            <p
-              className="
-                mt-6
-                max-w-sm
-                leading-7
-                text-slate-400
-              "
+          <div className="max-w-sm">
+            <Link
+              href="#home"
+              className="inline-flex items-center gap-3"
             >
-              Zenova is a premium digital
-              experience template built for
-              modern businesses, startups
-              and ambitious teams.
-            </p>
-          </div>
-
-          {/* Company */}
-          <div>
-            <h3 className="font-semibold">
-              Company
-            </h3>
-
-            <div className="mt-6 space-y-4">
-              {companyLinks.map((item) => (
-                <a
-                  key={item.label}
-                  href={item.href}
-                  className="
-                    block
-                    text-sm
-                    text-slate-400
-                    transition-colors
-                    hover:text-white
-                  "
-                >
-                  {item.label}
-                </a>
-              ))}
-            </div>
-          </div>
-
-          {/* Resources */}
-          <div>
-            <h3 className="font-semibold">
-              Resources
-            </h3>
-
-            <div className="mt-6 space-y-4">
-              {resourceLinks.map((item) => (
-                <a
-                  key={item.label}
-                  href={item.href}
-                  className="
-                    block
-                    text-sm
-                    text-slate-400
-                    transition-colors
-                    hover:text-white
-                  "
-                >
-                  {item.label}
-                </a>
-              ))}
-            </div>
-          </div>
-
-          {/* Newsletter */}
-          <div>
-            <h3 className="font-semibold">
-              Stay Updated
-            </h3>
-
-            <p className="mt-6 text-sm leading-6 text-slate-400">
-              Get the latest updates, product
-              news and design inspiration.
-            </p>
-
-            <div className="mt-5 flex">
-              <input
-                type="email"
-                placeholder="Email address"
+              <span
                 className="
-                  h-12
-                  min-w-0
-                  flex-1
-                  rounded-l-xl
-                  border
-                  border-white/10
-                  bg-white/5
-                  px-4
-                  text-sm
-                  text-white
-                  outline-none
-                  placeholder:text-slate-500
-                  focus:border-indigo-400
-                "
-              />
-
-              <button
-                type="button"
-                className="
-                  h-12
-                  rounded-r-xl
-                  bg-gradient-to-r
+                  flex
+                  h-11
+                  w-11
+                  items-center
+                  justify-center
+                  rounded-2xl
+                  bg-gradient-to-br
                   from-indigo-600
                   via-violet-600
                   to-cyan-500
-                  px-5
-                  text-sm
-                  font-semibold
+                  text-lg
+                  font-black
+                  shadow-lg
+                  shadow-indigo-500/20
                 "
               >
-                Join
-              </button>
+                Z
+              </span>
+
+              <span>
+                <span className="block text-xl font-bold">
+                  Zenova
+                </span>
+
+                <span className="block text-xs text-slate-500">
+                  Premium Next.js Template
+                </span>
+              </span>
+            </Link>
+
+            <p className="mt-6 leading-7 text-slate-400">
+              A premium digital experience template
+              built for startups, SaaS companies,
+              agencies and modern businesses.
+            </p>
+
+            {/* Social */}
+            <div className="mt-7 flex items-center gap-3">
+              <SocialIcon
+                label="Website"
+                href="#home"
+                icon={Globe}
+              />
+
+              <SocialIcon
+                label="Email"
+                href="mailto:hello@zenova.com"
+                icon={Mail}
+              />
+
+              <SocialIcon
+                label="Phone"
+                href="tel:+15551234567"
+                icon={Phone}
+              />
+
+              <SocialIcon
+                label="Location"
+                href="#contact"
+                icon={MapPin}
+              />
             </div>
+          </div>
+
+          {/* Navigation */}
+          <FooterColumn
+            title="Navigation"
+            links={navigation}
+          />
+
+          {/* Resources */}
+          <FooterColumn
+            title="Resources"
+            links={resources}
+          />
+
+          {/* Contact */}
+          <div>
+            <h3 className="text-sm font-bold">
+              Contact
+            </h3>
+
+            <div className="mt-6 space-y-4 text-sm text-slate-400">
+              <a
+                href="mailto:hello@zenova.com"
+                className="block transition-colors hover:text-white"
+              >
+                hello@zenova.com
+              </a>
+
+              <a
+                href="tel:+15551234567"
+                className="block transition-colors hover:text-white"
+              >
+                +1 (555) 123-4567
+              </a>
+
+              <p>
+                San Francisco,
+                <br />
+                California
+              </p>
+            </div>
+
+            <Link
+              href="#contact"
+              className="
+                mt-7
+                inline-flex
+                items-center
+                gap-2
+                text-sm
+                font-semibold
+                text-indigo-300
+                transition-colors
+                hover:text-white
+              "
+            >
+              Start a project
+              <ArrowUpRight size={16} />
+            </Link>
           </div>
         </div>
 
-        <FooterBottom />
+        {/* Bottom */}
+        <div
+          className="
+            mt-14
+            flex
+            flex-col
+            gap-4
+            border-t
+            border-white/10
+            pt-7
+            text-sm
+            text-slate-500
+            sm:flex-row
+            sm:items-center
+            sm:justify-between
+          "
+        >
+          <p>
+            Â© {new Date().getFullYear()} Zenova.
+            All rights reserved.
+          </p>
+
+          <div className="flex gap-6">
+            <a
+              href="#"
+              className="transition-colors hover:text-white"
+            >
+              Privacy
+            </a>
+
+            <a
+              href="#"
+              className="transition-colors hover:text-white"
+            >
+              Terms
+            </a>
+          </div>
+        </div>
       </div>
     </footer>
+  );
+}
+
+function FooterColumn({
+  title,
+  links,
+}: {
+  title: string;
+  links: {
+    name: string;
+    href: string;
+  }[];
+}) {
+  return (
+    <div>
+      <h3 className="text-sm font-bold">
+        {title}
+      </h3>
+
+      <div className="mt-6 space-y-4">
+        {links.map((link) => (
+          <Link
+            key={link.name}
+            href={link.href}
+            className="
+              block
+              text-sm
+              text-slate-400
+              transition-colors
+              hover:text-white
+            "
+          >
+            {link.name}
+          </Link>
+        ))}
+      </div>
+    </div>
+  );
+}
+
+function SocialIcon({
+  icon: Icon,
+  label,
+  href,
+}: {
+  icon: typeof Globe;
+  label: string;
+  href: string;
+}) {
+  return (
+    <a
+      href={href}
+      aria-label={label}
+      className="
+        flex
+        h-10
+        w-10
+        items-center
+        justify-center
+        rounded-xl
+        border
+        border-white/10
+        bg-white/5
+        text-slate-400
+        transition-all
+        duration-300
+        hover:-translate-y-1
+        hover:border-indigo-400/30
+        hover:bg-indigo-500/10
+        hover:text-white
+      "
+    >
+      <Icon size={17} />
+    </a>
   );
 }

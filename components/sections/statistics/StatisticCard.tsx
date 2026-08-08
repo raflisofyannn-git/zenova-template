@@ -1,4 +1,4 @@
-interface Props {
+﻿interface Props {
   number: number;
   suffix?: string;
   title: string;

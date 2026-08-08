@@ -1,4 +1,4 @@
-import SocialIcons from "./SocialIcons";
+﻿import SocialIcons from "./SocialIcons";
 
 export default function FooterBottom() {
   return (
@@ -17,7 +17,7 @@ export default function FooterBottom() {
       "
     >
       <p className="text-sm text-slate-400">
-        © 2026 Aureon. All rights reserved.
+        Â© 2026 ZENOVA. All rights reserved.
       </p>
 
       <SocialIcons />

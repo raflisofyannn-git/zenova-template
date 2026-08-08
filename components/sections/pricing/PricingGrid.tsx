@@ -1,4 +1,4 @@
-import FadeUp from "@/components/animation/FadeUp";
+﻿import FadeUp from "@/components/animation/FadeUp";
 import { pricing } from "@/data/pricing";
 import PricingCard from "./PricingCard";
 
@@ -14,15 +14,20 @@ export default function PricingGrid() {
         lg:gap-8
       "
     >
-      {pricing.map((plan, index) => (
-        <div
+      {pricing.map((plan) => (
+        <FadeUp
           key={plan.name}
-          className="h-full"
         >
-          <FadeUp delay={index * 0.12}>
-            <PricingCard {...plan} />
-          </FadeUp>
-        </div>
+          <div className="h-full">
+            <PricingCard
+              name={plan.name}
+              price={plan.price}
+              description={plan.description}
+              features={plan.features}
+              popular={plan.popular}
+            />
+          </div>
+        </FadeUp>
       ))}
     </div>
   );

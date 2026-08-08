@@ -1,4 +1,4 @@
-import FadeLeft from "@/components/animation/FadeLeft";
+﻿import FadeLeft from "@/components/animation/FadeLeft";
 import DashboardMockup from "@/components/dashboard/DashboardMockup";
 
 export default function HeroImage() {
@@ -7,11 +7,12 @@ export default function HeroImage() {
       className="
         relative
         flex
-        min-h-[540px]
+        min-h-[560px]
         w-full
         items-center
         justify-center
-        lg:min-h-[560px]
+        lg:min-h-[620px]
+        lg:justify-end
       "
     >
       {/* Dashboard */}
@@ -19,12 +20,13 @@ export default function HeroImage() {
         <div
           className="
             relative
+            z-10
             origin-center
-            -translate-y-4
-            scale-[0.64]
-            sm:scale-[0.72]
-            lg:scale-[0.74]
-            xl:scale-[0.82]
+            scale-[0.72]
+            sm:scale-[0.82]
+            md:scale-[0.88]
+            lg:scale-[0.88]
+            xl:scale-95
           "
         >
           <DashboardMockup />
@@ -36,29 +38,31 @@ export default function HeroImage() {
         className="
           absolute
           right-0
-          top-6
+          top-8
           z-30
-          w-[118px]
-          rounded-[24px]
+          w-[125px]
+          rounded-3xl
           border
           border-border/60
-          bg-white/95
-          p-4
-          shadow-xl
+          bg-background/95
+          p-5
+          shadow-2xl
           backdrop-blur-xl
           sm:right-2
+          sm:w-[135px]
           lg:right-0
+          lg:top-10
         "
       >
         <p className="text-xs text-muted-foreground">
           Projects
         </p>
 
-        <h3 className="mt-1 text-2xl font-bold tracking-tight">
+        <h3 className="mt-2 text-2xl font-black">
           250+
         </h3>
 
-        <p className="mt-1 text-xs font-semibold text-indigo-600">
+        <p className="mt-2 text-xs font-semibold text-primary">
           Active
         </p>
       </div>
@@ -67,31 +71,32 @@ export default function HeroImage() {
       <div
         className="
           absolute
-          right-1
+          right-2
           top-40
           z-30
-          w-[118px]
-          rounded-[24px]
+          w-[130px]
+          rounded-3xl
           border
           border-border/60
-          bg-white/95
-          p-4
-          shadow-xl
+          bg-background/95
+          p-5
+          shadow-2xl
           backdrop-blur-xl
-          sm:right-2
-          lg:right-1
+          sm:right-4
+          lg:right-0
+          lg:top-44
         "
       >
         <p className="text-xs text-muted-foreground">
           Conversion
         </p>
 
-        <h3 className="mt-1 text-2xl font-bold tracking-tight">
+        <h3 className="mt-2 text-2xl font-black">
           18.4%
         </h3>
 
-        <p className="mt-1 text-xs font-semibold text-emerald-600">
-          ▲ +3.8%
+        <p className="mt-2 text-xs font-semibold text-emerald-600">
+          â–² +3.8%
         </p>
       </div>
 
@@ -99,18 +104,19 @@ export default function HeroImage() {
       <div
         className="
           absolute
-          bottom-20
-          left-0
+          bottom-2
+          left-2
           z-30
-          w-[120px]
-          rounded-[24px]
+          w-[130px]
+          rounded-3xl
           border
           border-border/60
-          bg-white/95
-          p-4
-          shadow-xl
+          bg-background/95
+          p-5
+          shadow-2xl
           backdrop-blur-xl
-          sm:left-2
+          sm:left-4
+          lg:bottom-0
           lg:left-0
         "
       >
@@ -118,12 +124,12 @@ export default function HeroImage() {
           Revenue
         </p>
 
-        <h3 className="mt-1 text-2xl font-bold tracking-tight">
+        <h3 className="mt-2 text-2xl font-black">
           $120K
         </h3>
 
-        <p className="mt-1 text-xs font-semibold text-emerald-600">
-          ▲ +18.2%
+        <p className="mt-2 text-xs font-semibold text-emerald-600">
+          â–² +18.2%
         </p>
       </div>
     </div>

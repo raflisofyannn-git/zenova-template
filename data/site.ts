@@ -1,4 +1,4 @@
-export const siteConfig = {
+﻿export const siteConfig = {
   name: "Zenova",
   tagline: "Modern SaaS Template",
   description:

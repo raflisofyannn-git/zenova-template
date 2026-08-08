@@ -1,4 +1,4 @@
-import { Quote } from "lucide-react";
+﻿import { Quote } from "lucide-react";
 
 import Avatar from "./Avatar";
 import RatingStars from "./RatingStars";
@@ -74,7 +74,7 @@ export default function TestimonialCard({
           text-muted-foreground
         "
       >
-        “{review}”
+        â€œ{review}â€
       </p>
 
       {/* Rating */}
@@ -101,7 +101,7 @@ export default function TestimonialCard({
           </h4>
 
           <p className="mt-1 truncate text-sm text-muted-foreground">
-            {position} · {company}
+            {position} Â· {company}
           </p>
         </div>
 

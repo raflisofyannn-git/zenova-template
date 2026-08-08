@@ -1,4 +1,4 @@
-export const hero = {
+﻿export const hero = {
 
   badge: "Next Generation Business",
 

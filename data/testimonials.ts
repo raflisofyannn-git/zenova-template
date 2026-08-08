@@ -1,4 +1,4 @@
-export const testimonials = [
+﻿export const testimonials = [
   {
     id: 1,
     name: "John Anderson",
@@ -7,7 +7,7 @@ export const testimonials = [
     avatar: "/avatars/avatar-1.jpg",
     rating: 5,
     review:
-      "Aureon completely transformed our digital presence. The design is modern, elegant, and incredibly easy to customize.",
+      "ZENOVA completely transformed our digital presence. The design is modern, elegant, and incredibly easy to customize.",
   },
   {
     id: 2,

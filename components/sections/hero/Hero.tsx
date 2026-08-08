@@ -1,4 +1,4 @@
-import HeroContent from "./HeroContent";
+﻿import HeroContent from "./HeroContent";
 import HeroImage from "./HeroImage";
 
 export default function Hero() {
@@ -72,7 +72,7 @@ export default function Hero() {
       />
 
       <div
-          className="
+        className="
           mx-auto
           flex
           min-h-[680px]
@@ -80,20 +80,23 @@ export default function Hero() {
           flex-col
           items-center
           justify-center
-          gap-16
+          gap-12
           px-6
           py-20
           sm:px-8
-          lg:min-h-[680px]
+          lg:min-h-[700px]
           lg:flex-row
+          lg:items-center
           lg:justify-between
-          lg:gap-10
+          lg:gap-8
           lg:px-10
         "
       >
         {/* Content */}
         <div
           className="
+            relative
+            z-10
             w-full
             max-w-2xl
             lg:max-w-[540px]
@@ -105,6 +108,8 @@ export default function Hero() {
         {/* Dashboard */}
         <div
           className="
+            relative
+            z-10
             flex
             w-full
             max-w-[650px]

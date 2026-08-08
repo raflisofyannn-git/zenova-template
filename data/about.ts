@@ -1,4 +1,4 @@
-export const aboutFeatures = [
+﻿export const aboutFeatures = [
   "Premium UI Components",
   "SEO Optimized",
   "Fully Responsive",

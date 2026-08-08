@@ -1,4 +1,4 @@
-import { Bell, Search } from "lucide-react";
+﻿import { Bell, Search } from "lucide-react";
 
 export default function BrowserHeader() {
   return (

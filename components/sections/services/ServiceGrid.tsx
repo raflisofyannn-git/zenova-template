@@ -1,4 +1,4 @@
-import FadeUp from "@/components/animation/FadeUp";
+﻿import FadeUp from "@/components/animation/FadeUp";
 import { services } from "@/data/services";
 import ServiceCard from "./ServiceCard";
 

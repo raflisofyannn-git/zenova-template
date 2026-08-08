@@ -1,4 +1,4 @@
-import FadeUp from "@/components/animation/FadeUp";
+﻿import FadeUp from "@/components/animation/FadeUp";
 import { projects } from "@/data/projects";
 
 import ProjectCard from "./ProjectCard";

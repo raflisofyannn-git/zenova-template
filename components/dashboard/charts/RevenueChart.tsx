@@ -1,4 +1,4 @@
-export default function RevenueChart() {
+﻿export default function RevenueChart() {
   return (
     <div
       className="
@@ -71,7 +71,7 @@ export default function RevenueChart() {
             text-emerald-700
           "
         >
-          ▲ +18.2%
+          â–² +18.2%
         </div>
 
       </div>
