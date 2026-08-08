@@ -1,0 +1,126 @@
+ZENOVA COMMERCIAL SINGLE-PROJECT LICENSE
+Version 1.0.0
+
+Copyright © 2026 Zenova.
+All rights reserved.
+
+1. GRANT OF LICENSE
+
+The purchaser is granted a limited, non-exclusive,
+non-transferable license to use and modify the Zenova
+template for personal or commercial website projects.
+
+The purchaser may use the template to create a website
+for themselves or for a client.
+
+2. PERMITTED USE
+
+The purchaser may:
+
+- Install and use Zenova on their own computer.
+- Modify the source code.
+- Customize colors, typography, content, images,
+  components, and layouts.
+- Create websites for personal or commercial use.
+- Use the resulting website for a client project.
+- Deploy the resulting website to a public hosting service.
+- Create multiple pages based on the template within
+  the licensed project.
+
+3. RESTRICTIONS
+
+The purchaser may NOT:
+
+- Resell Zenova as a website template.
+- Redistribute the original source code.
+- Share the downloaded package publicly.
+- Upload the source code to a public repository.
+- Sell, sublicense, lease, rent, or transfer the template
+  itself to another person.
+- Include Zenova source code in another template or
+  downloadable product intended for redistribution.
+- Use Zenova as the primary source material for creating
+  another competing template for sale.
+- Distribute the original package through torrent,
+  file-sharing services, public repositories, or other
+  download platforms.
+
+4. CLIENT PROJECTS
+
+The purchaser may use Zenova to build websites for clients.
+
+The purchaser may deliver the final customized website
+to the client as part of a client project.
+
+However, the purchaser may not transfer or distribute the
+original Zenova template package separately to the client.
+
+5. OWNERSHIP
+
+Zenova and its original source code remain the intellectual
+property of the original author/seller.
+
+This license grants usage rights only and does not transfer
+ownership of the template.
+
+6. THIRD-PARTY SOFTWARE
+
+Zenova may include or depend on third-party open-source
+libraries.
+
+Those libraries remain subject to their respective licenses.
+
+Examples may include:
+
+- Next.js
+- React
+- TypeScript
+- Tailwind CSS
+- Framer Motion
+- Lucide React
+- Other npm dependencies included in package.json
+
+Users are responsible for complying with the licenses of
+third-party dependencies.
+
+7. ASSETS
+
+Images, fonts, logos, icons, illustrations, or other assets
+included with Zenova may have separate licenses.
+
+Third-party assets remain subject to their respective
+license terms.
+
+8. NO WARRANTY
+
+Zenova is provided "AS IS" without warranties of any kind,
+express or implied.
+
+The seller does not guarantee that Zenova will be compatible
+with every third-party service, hosting provider, browser,
+operating system, or future software version.
+
+9. SUPPORT
+
+Support is provided according to the support policy of the
+marketplace or seller through which Zenova was purchased.
+
+Support does not include building custom applications,
+custom integrations, or major modifications on behalf of
+the purchaser unless separately agreed.
+
+10. TERMINATION
+
+This license automatically terminates if the purchaser
+violates the restrictions described in this agreement.
+
+Upon termination, the purchaser must stop redistributing
+the template and remove unauthorized copies from public
+distribution.
+
+11. ACCEPTANCE
+
+By purchasing, downloading, installing, or using Zenova,
+the purchaser agrees to the terms of this license.
+
+END OF LICENSE
